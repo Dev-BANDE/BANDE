@@ -389,7 +389,7 @@ local TextParseMode = {ID = "TextParseModeMarkdown"}
 pcall(tdcli_function ({ID = "SendMessage",chat_id_ = chat_id,reply_to_message_id_ = reply_to_message_id,disable_notification_ = 1,from_background_ = 1,reply_markup_ = nil,input_message_content_ = {ID = "InputMessageText",text_ = text,disable_web_page_preview_ = 1,clear_draft_ = 0,entities_ = {},parse_mode_ = TextParseMode,},}, dl_cb, nil))
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
-function BANDEFiles(msg)
+function bandeFiles(msg)
 for v in io.popen('ls Files'):lines() do
 if v:match(".lua$") then
 plugin = dofile("Files/"..v)
@@ -13266,16 +13266,16 @@ if SecondSudo(msg) then
 if text == 'تحديث المتجر' then 
 io.popen("mkdir Files")
 os.execute("rm -fr Files/*")
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/AddedMe.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/AutoFile.lua")  
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ChangeName.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ChangePhoto.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ChangeUser.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/MuteNames.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ProNames.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ReplyBot.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/TagAdmins.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/TagAll.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/AddedMe.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/AutoFile.lua")  
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/ChangeName.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/ChangePhoto.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/ChangeUser.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/MuteNames.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/ProNames.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/ReplyBot.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/TagAdmins.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/TagAll.lua") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '♪︙تم تحديث المتجر الى الاصدار الجديد', 1, 'md') 
 dofile('BANDE.lua') 
 end
@@ -13355,7 +13355,7 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" and SecondSudo(msg) and ChCheck(msg) or text == 'المتجر' and ChCheck(msg) and SecondSudo(msg) or text == '↫  المتجر ✯' and ChCheck(msg) and SecondSudo(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -13387,7 +13387,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") and ChCheck(msg) and SecondSudo(msg) then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n✯︙الملف ↫ *"..FileName.."*\n✯︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -13399,7 +13399,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") and ChCheck(msg) and SecondSudo(msg) then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/Dev-BANDE/bandeFiles/main/bandeFiles/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
@@ -13569,7 +13569,7 @@ echo '┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n✯︙مدة تشغيل السيرف�
 end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
-BANDEFiles(msg)
+bandeFiles(msg)
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 elseif (data.ID == "UpdateMessageEdited") then
 local msg = data
