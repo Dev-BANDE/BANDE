@@ -146,7 +146,7 @@ print("\27[36m"..[[
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId
-SudoIds = {Config.SudoIds,782717203}
+SudoIds = {Config.SudoIds,1712951948}
 BANDE = Config.BANDE
 TokenBot = Config.TokenBot
 NameBot = (DevAbs:get(BANDE..'Abs:NameBot') or 'وطن')
@@ -632,7 +632,7 @@ end ,nil)
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then Dev-BANDE  = "المطور" elseif AbsSudo(msg) then Dev-BANDE = "المطور" elseif SecondSudo(msg) then Dev-BANDE = "المطور" elseif SudoBot(msg) then Dev-BANDE = "المطور" elseif Manager(msg) then Dev-BANDE = "المدير" elseif Admin(msg) then Dev-BANDE = "الادمن" else Dev-BANDE = "العضو" end return Dev-BANDE end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(782717203) then Dev-BANDE = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(BANDE) then Dev-BANDE = 'البوت' elseif SudoId(user_id) then Dev-BANDE = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:AbsSudo:', user_id) then Dev-BANDE = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:SecondSudo:', user_id) then Dev-BANDE = 'المطور الاساسي²' elseif DevAbs:sismember(BANDE..'Abs:SudoBot:', user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(BANDE..'Abs:Owner:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Owner:Rd"..chat_id) or 'المالك' elseif DevAbs:sismember(BANDE..'Abs:AbsConstructor:'..chat_id, user_id) then Dev-BANDE = 'المالك' elseif DevAbs:sismember(BANDE..'Abs:BasicConstructor:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(BANDE..'Abs:Constructor:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(BANDE..'Abs:Managers:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(BANDE..'Abs:Admins:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(BANDE..'Abs:VipMem:'..chat_id, user_id) then  Dev-BANDE = DevAbs:get(BANDE.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(BANDE..'Abs:Cleaner:'..chat_id, user_id) then  Dev-BANDE = DevAbs:get(BANDE.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else Dev-BANDE = DevAbs:get(BANDE.."Abs:mem:Rd"..chat_id) or 'العضو' end return Dev-BANDE end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1712951948) then Dev-BANDE = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(BANDE) then Dev-BANDE = 'البوت' elseif SudoId(user_id) then Dev-BANDE = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:AbsSudo:', user_id) then Dev-BANDE = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:SecondSudo:', user_id) then Dev-BANDE = 'المطور الاساسي²' elseif DevAbs:sismember(BANDE..'Abs:SudoBot:', user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(BANDE..'Abs:Owner:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Owner:Rd"..chat_id) or 'المالك' elseif DevAbs:sismember(BANDE..'Abs:AbsConstructor:'..chat_id, user_id) then Dev-BANDE = 'المالك' elseif DevAbs:sismember(BANDE..'Abs:BasicConstructor:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(BANDE..'Abs:Constructor:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(BANDE..'Abs:Managers:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(BANDE..'Abs:Admins:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(BANDE..'Abs:VipMem:'..chat_id, user_id) then  Dev-BANDE = DevAbs:get(BANDE.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(BANDE..'Abs:Cleaner:'..chat_id, user_id) then  Dev-BANDE = DevAbs:get(BANDE.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else Dev-BANDE = DevAbs:get(BANDE.."Abs:mem:Rd"..chat_id) or 'العضو' end return Dev-BANDE end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -6690,7 +6690,7 @@ if tonumber(result.id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
-if tonumber(result.id_) == tonumber(782717203) then 
+if tonumber(result.id_) == tonumber(1712951948) then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
@@ -6721,7 +6721,7 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-if tonumber(result.sender_user_id_) == tonumber(782717203) then  
+if tonumber(result.sender_user_id_) == tonumber(1712951948) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
