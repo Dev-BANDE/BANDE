@@ -631,8 +631,8 @@ vardump(data)
 end ,nil) 
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
-local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then WaTaNTeaM  = "المطور" elseif AbsSudo(msg) then WaTaNTeaM = "المطور" elseif SecondSudo(msg) then WaTaNTeaM = "المطور" elseif SudoBot(msg) then WaTaNTeaM = "المطور" elseif Manager(msg) then WaTaNTeaM = "المدير" elseif Admin(msg) then WaTaNTeaM = "الادمن" else WaTaNTeaM = "العضو" end return WaTaNTeaM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(782717203) then WaTaNTeaM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(BANDE) then WaTaNTeaM = 'البوت' elseif SudoId(user_id) then WaTaNTeaM = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:AbsSudo:', user_id) then WaTaNTeaM = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:SecondSudo:', user_id) then WaTaNTeaM = 'المطور الاساسي²' elseif DevAbs:sismember(BANDE..'Abs:SudoBot:', user_id) then WaTaNTeaM = DevAbs:get(BANDE.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(BANDE..'Abs:Owner:'..chat_id, user_id) then WaTaNTeaM = DevAbs:get(BANDE.."Abs:Owner:Rd"..chat_id) or 'المالك' elseif DevAbs:sismember(BANDE..'Abs:AbsConstructor:'..chat_id, user_id) then WaTaNTeaM = 'المالك' elseif DevAbs:sismember(BANDE..'Abs:BasicConstructor:'..chat_id, user_id) then WaTaNTeaM = DevAbs:get(BANDE.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(BANDE..'Abs:Constructor:'..chat_id, user_id) then WaTaNTeaM = DevAbs:get(BANDE.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(BANDE..'Abs:Managers:'..chat_id, user_id) then WaTaNTeaM = DevAbs:get(BANDE.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(BANDE..'Abs:Admins:'..chat_id, user_id) then WaTaNTeaM = DevAbs:get(BANDE.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(BANDE..'Abs:VipMem:'..chat_id, user_id) then  WaTaNTeaM = DevAbs:get(BANDE.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(BANDE..'Abs:Cleaner:'..chat_id, user_id) then  WaTaNTeaM = DevAbs:get(BANDE.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else WaTaNTeaM = DevAbs:get(BANDE.."Abs:mem:Rd"..chat_id) or 'العضو' end return WaTaNTeaM end
+local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then Dev-BANDE  = "المطور" elseif AbsSudo(msg) then Dev-BANDE = "المطور" elseif SecondSudo(msg) then Dev-BANDE = "المطور" elseif SudoBot(msg) then Dev-BANDE = "المطور" elseif Manager(msg) then Dev-BANDE = "المدير" elseif Admin(msg) then Dev-BANDE = "الادمن" else Dev-BANDE = "العضو" end return Dev-BANDE end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(782717203) then Dev-BANDE = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(BANDE) then Dev-BANDE = 'البوت' elseif SudoId(user_id) then Dev-BANDE = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:AbsSudo:', user_id) then Dev-BANDE = 'المطور الاساسي' elseif DevAbs:sismember(BANDE..'Abs:SecondSudo:', user_id) then Dev-BANDE = 'المطور الاساسي²' elseif DevAbs:sismember(BANDE..'Abs:SudoBot:', user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(BANDE..'Abs:Owner:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Owner:Rd"..chat_id) or 'المالك' elseif DevAbs:sismember(BANDE..'Abs:AbsConstructor:'..chat_id, user_id) then Dev-BANDE = 'المالك' elseif DevAbs:sismember(BANDE..'Abs:BasicConstructor:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(BANDE..'Abs:Constructor:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(BANDE..'Abs:Managers:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(BANDE..'Abs:Admins:'..chat_id, user_id) then Dev-BANDE = DevAbs:get(BANDE.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(BANDE..'Abs:VipMem:'..chat_id, user_id) then  Dev-BANDE = DevAbs:get(BANDE.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(BANDE..'Abs:Cleaner:'..chat_id, user_id) then  Dev-BANDE = DevAbs:get(BANDE.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else Dev-BANDE = DevAbs:get(BANDE.."Abs:mem:Rd"..chat_id) or 'العضو' end return Dev-BANDE end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -705,7 +705,7 @@ end
 function ReplyStatus(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,dp) 
 if dp.first_name_ ~= false then
-local UserName = (dp.username_ or "WaTaNTeaM")
+local UserName = (dp.username_ or "Dev-BANDE")
 for gmatch in string.gmatch(dp.first_name_, "[^%s]+") do
 dp.first_name_ = gmatch
 end
@@ -2292,7 +2292,7 @@ end
 if DataText and DataText:match('/UpdateSource:'..tonumber(data.sender_user_id_)..'(.*)') then
 local Abs = DataText:match('/UpdateSource:'..tonumber(data.sender_user_id_)..'(.*)')
 os.execute('rm -rf BANDE.lua') 
-os.execute('wget https://raw.githubusercontent.com/WaTaNTeaM/BANDE/main/BANDE.lua') 
+os.execute('wget https://raw.githubusercontent.com/Dev-BANDE/BANDE/main/BANDE.lua') 
 dofile('BANDE.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
@@ -3367,7 +3367,7 @@ if ChatType == 'pv' then
 if text == '/start' or text == '↫ رجوع ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3386,7 +3386,7 @@ end end
 if text == '↫ تعيين كلايش الاوامر ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3407,7 +3407,7 @@ end end
 if text == '↫ السورس ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3426,7 +3426,7 @@ end end
 if text == '↫ الاحصائيات ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3446,7 +3446,7 @@ end end
 if text == '↫  المطورين ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3465,7 +3465,7 @@ end end
 if text == '↫ التفعيل والتعطيل ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3486,7 +3486,7 @@ end end
 if text == '↫ الاذاعه ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3505,7 +3505,7 @@ end end
 if text == '↫ العام ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3523,7 +3523,7 @@ end end
 if text == '↫ ردود الخاص ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3540,7 +3540,7 @@ end end
 if text == '↫ الاشتراك الاجباري ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3559,7 +3559,7 @@ end end
 if text == '↫ الاوامر الخدميه ✯' or text == '/play' or text == '↫  رجوع  ✯' or text == 'اوامر الخدميه' or text == '/free' then
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3577,7 +3577,7 @@ end
 if text == '↫ اوامر التسليه ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3595,7 +3595,7 @@ end
 if text == '↫ الاوامر الخدميه  ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3614,7 +3614,7 @@ end
 if text == '↫ اوامر النسب ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3632,7 +3632,7 @@ end
 if text == '↫ العاب ✯' then 
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3655,7 +3655,7 @@ end
 if text == '/start' then  
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -3663,7 +3663,7 @@ if not DevAbs:get(BANDE..'Abs:Start:Time'..msg.sender_user_id_) then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp)
 tdcli_function({ID="GetUser",user_id_=BANDE},function(arg,dpbot)
 local inline = {
-{{text="✯ المطور .",url="t.me/"..(dp.username_ or "WaTaNTeaM")}},
+{{text="✯ المطور .",url="t.me/"..(dp.username_ or "Dev-BANDE")}},
 {{text="✯ السورس .",url="https://t.me/WaTaNTeaM"},{text="✯ لتنصيب بوت .",url="https://t.me/WaTaNTeaM/6109"}},{{text="✯ اضفني في مجموعتك .",url="t.me/"..dpbot.username_.."?startgroup=botstart"}}
 }
 local start = DevAbs:get(BANDE.."Abs:Start:Bot")
@@ -3682,7 +3682,7 @@ end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if not SecondSudo(msg) and not DevAbs:sismember(BANDE..'Abs:Ban:Pv',msg.sender_user_id_) and not DevAbs:get(BANDE..'Abs:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,chat) 
-Dev_Abs(msg.sender_user_id_, msg.id_, 1, '✯︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "WaTaNTeaM")..')', 1, 'md') 
+Dev_Abs(msg.sender_user_id_, msg.id_, 1, '✯︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "Dev-BANDE")..')', 1, 'md') 
 tdcli_function({ID="ForwardMessages",chat_id_=DevId,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
@@ -3770,13 +3770,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
 end
 if text == 'تفعيل التواصل' and ChCheck(msg) or text == '↫ تفعيل التواصل ✯' and ChCheck(msg) then   
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل التواصل بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل التواصل بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Texting:Pv') 
 end
 if text == 'تعطيل التواصل' and ChCheck(msg) or text == '↫ تعطيل التواصل ✯' and ChCheck(msg) then  
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل التواصل بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل التواصل بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Texting:Pv',true) 
 end
 if Sudo(msg) then
@@ -3802,8 +3802,8 @@ if text == "انطق" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙فقط قم
 if text == "ايديي" and ChCheck(msg) or text == "↫ ايديي ✯" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1,'✯︙ايديك ↫ ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
 -- Source BANDE --
 if text == 'نبذا' and ChCheck(msg) or text == '↫ نبذا ✯' then
-local WaTaNTeaM = {'- Nothing stops him who wants you .','make them wish they had you !.','Maybe a magical girl','٫ 𝖡𝖾 𝗌𝗂𝗆𝗉𝗅𝖾 𝖺𝗇𝖽 𝖽𝗂𝖿𝖿𝖾𝗋𝖾𝗇𝗍','. 𝖬𝖺𝗄𝖾 𝖽𝗋𝖾𝖺𝗆𝗌 𝖿𝗋𝗈𝗆 𝗒𝗈𝗎𝗋 𝗋𝖾𝖿𝗋𝖺𝖼𝗍𝗂𝗈𝗇𝗌 . .',':Life is lying .','𝖨 𝗐𝗂𝗅𝗅 𝖺𝗅𝗐𝖺𝗒𝗌 𝗅𝗈𝗏𝖾 𝗒𝗈𝗎 𝗇𝖾𝗏𝖾𝗋 𝖿𝗈𝗋𝗀𝖾𝗍'}  
-Dev_Abs(msg.chat_id_, msg.id_, 1, ''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'' , 1, 'md')  
+local Dev-BANDE = {'- Nothing stops him who wants you .','make them wish they had you !.','Maybe a magical girl','٫ 𝖡𝖾 𝗌𝗂𝗆𝗉𝗅𝖾 𝖺𝗇𝖽 𝖽𝗂𝖿𝖿𝖾𝗋𝖾𝗇𝗍','. 𝖬𝖺𝗄𝖾 𝖽𝗋𝖾𝖺𝗆𝗌 𝖿𝗋𝗈𝗆 𝗒𝗈𝗎𝗋 𝗋𝖾𝖿𝗋𝖺𝖼𝗍𝗂𝗈𝗇𝗌 . .',':Life is lying .','𝖨 𝗐𝗂𝗅𝗅 𝖺𝗅𝗐𝖺𝗒𝗌 𝗅𝗈𝗏𝖾 𝗒𝗈𝗎 𝗇𝖾𝗏𝖾𝗋 𝖿𝗈𝗋𝗀𝖾𝗍'}  
+Dev_Abs(msg.chat_id_, msg.id_, 1, ''..Dev-BANDE[math.random(#Dev-BANDE)]..'' , 1, 'md')  
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -3888,7 +3888,7 @@ keyboard.inline_keyboard = {
 {{text="🔵 لعبة الالوان 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 لعبة الصاروخ 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
 {{text="لعبة النينجا",url='https://t.me/gamee?game=GravityNinja21'},{text="لعبة الكرتي",url='https://t.me/gamee?game=KarateKid2'}},
-{{text = '✯ WaTaN TeaM .', url="t.me/WaTaNTeaM"}},
+{{text = '✯ WaTaN TeaM .', url="t.me/Dev-BANDE"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4266,8 +4266,8 @@ end
 end
 if text and not DevAbs:get(BANDE..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_) then
 if DevAbs:sismember(BANDE..'Abs:Manager:GpRedod'..msg.chat_id_,text) then
-local WaTaNTeaM =  DevAbs:smembers(BANDE..'Abs:Text:GpTexts'..text..msg.chat_id_)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '['..WaTaNTeaM[math.random(#WaTaNTeaM)]..']' , 1, 'md')  
+local Dev-BANDE =  DevAbs:smembers(BANDE..'Abs:Text:GpTexts'..text..msg.chat_id_)
+Dev_Abs(msg.chat_id_, msg.id_, 1, '['..Dev-BANDE[math.random(#Dev-BANDE)]..']' , 1, 'md')  
 end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -4301,8 +4301,8 @@ end
 end
 if text and not DevAbs:get(BANDE..'Abs:Add:Kt'..msg.sender_user_id_..msg.chat_id_) then
 if DevAbs:sismember(BANDE..'Abs:Sudo:Kt'..msg.chat_id_,text) then
-local WaTaNTeaM =  DevAbs:smembers(BANDE..'Abs:Text:KtTexts'..text..msg.chat_id_)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '['..WaTaNTeaM[math.random(#WaTaNTeaM)]..']' , 1, 'md')  
+local Dev-BANDE =  DevAbs:smembers(BANDE..'Abs:Text:KtTexts'..text..msg.chat_id_)
+Dev_Abs(msg.chat_id_, msg.id_, 1, '['..Dev-BANDE[math.random(#Dev-BANDE)]..']' , 1, 'md')  
 end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -4379,7 +4379,7 @@ if DevAbs:get(BANDE..'Abs:Stecker:GpRed'..msg.content_.text_..msg.chat_id_) then
 sendSticker(msg.chat_id_, msg.id_, 0, 1,nil, DevAbs:get(BANDE..'Abs:Stecker:GpRed'..msg.content_.text_..msg.chat_id_))
 end
 if DevAbs:get(BANDE..'Abs:Text:GpRed'..msg.content_.text_..msg.chat_id_) then
-function WaTaNTeaM(extra,result,success)
+function Dev-BANDE(extra,result,success)
 if result.username_ then username = '[@'..result.username_..']' else username = 'لا يوجد' end
 local edit_msg = DevAbs:get(BANDE..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0
 local user_msgs = DevAbs:get(BANDE..'Abs:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_)
@@ -4392,7 +4392,7 @@ local Text = Text:gsub('#msgs',(user_msgs or 'لا يوجد'))
 local Text = Text:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 send(msg.chat_id_,msg.id_,Text)
 end
-getUser(msg.sender_user_id_, WaTaNTeaM)
+getUser(msg.sender_user_id_, Dev-BANDE)
 end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -4474,7 +4474,7 @@ if DevAbs:get(BANDE.."Abs:Stecker:AllRed"..msg.content_.text_) then
 sendSticker(msg.chat_id_, msg.id_, 0, 1,nil, DevAbs:get(BANDE.."Abs:Stecker:AllRed"..msg.content_.text_))
 end
 if DevAbs:get(BANDE.."Abs:Text:AllRed"..msg.content_.text_) then
-function WaTaNTeaM(extra,result,success)
+function Dev-BANDE(extra,result,success)
 if result.username_ then username = '[@'..result.username_..']' else username = 'لا يوجد' end
 local edit_msg = DevAbs:get(BANDE..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0
 local user_msgs = DevAbs:get(BANDE..'Abs:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_)
@@ -4487,7 +4487,7 @@ local Text = Text:gsub('#msgs',(user_msgs or 'لا يوجد'))
 local Text = Text:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 send(msg.chat_id_,msg.id_,Text)
 end
-getUser(msg.sender_user_id_, WaTaNTeaM)
+getUser(msg.sender_user_id_, Dev-BANDE)
 end
 end 
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -5133,33 +5133,33 @@ end
 local msg = data.message_
 text = msg.content_.text_
 if text and Constructor(msg) then 
-if DevAbs:get('WaTaNTeaM:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
+if DevAbs:get('Dev-BANDE:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
-DevAbs:del('WaTaNTeaM:'..BANDE..'id:user'..msg.chat_id_)  
+DevAbs:del('Dev-BANDE:'..BANDE..'id:user'..msg.chat_id_)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙تم الغاء الامر', 1, 'md')
-DevAbs:del('WaTaNTeaM:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('Dev-BANDE:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 return false  end 
-DevAbs:del('WaTaNTeaM:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('Dev-BANDE:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 local numadded = string.match(text, "(%d+)") 
-local iduserr = DevAbs:get('WaTaNTeaM:'..BANDE..'id:user'..msg.chat_id_)  
+local iduserr = DevAbs:get('Dev-BANDE:'..BANDE..'id:user'..msg.chat_id_)  
 DevAbs:incrby(BANDE..'Abs:UsersMsgs'..msg.chat_id_..':'..iduserr,numadded)
 Dev_Abs(msg.chat_id_, msg.id_,  1, "✯︙تم اضافة "..numadded..' رساله', 1, 'md')
-DevAbs:del('WaTaNTeaM:'..BANDE..'id:user'..msg.chat_id_) 
+DevAbs:del('Dev-BANDE:'..BANDE..'id:user'..msg.chat_id_) 
 end
 end
 if text and Constructor(msg) then 
-if DevAbs:get('WaTaNTeaM:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
+if DevAbs:get('Dev-BANDE:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
-DevAbs:del('WaTaNTeaM:'..BANDE..'ids:user'..msg.chat_id_)  
+DevAbs:del('Dev-BANDE:'..BANDE..'ids:user'..msg.chat_id_)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙تم الغاء الامر', 1, 'md')
-DevAbs:del('WaTaNTeaM:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('Dev-BANDE:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 return false  end 
-DevAbs:del('WaTaNTeaM:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('Dev-BANDE:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 local numadded = string.match(text, "(%d+)") 
-local iduserr = DevAbs:get('WaTaNTeaM:'..BANDE..'ids:user'..msg.chat_id_)  
+local iduserr = DevAbs:get('Dev-BANDE:'..BANDE..'ids:user'..msg.chat_id_)  
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..iduserr,numadded)  
 Dev_Abs(msg.chat_id_, msg.id_,  1, "✯︙تم اضافة "..numadded..' نقطه', 1, 'md')
-DevAbs:del('WaTaNTeaM:'..BANDE..'ids:user'..msg.chat_id_)  
+DevAbs:del('Dev-BANDE:'..BANDE..'ids:user'..msg.chat_id_)  
 end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -5506,16 +5506,16 @@ end
 if ChatType == 'sp' or ChatType == 'gp' or ChatType == 'pv' then
 if text == 'بوت' or text == 'بوتت' then 
 NameBot = (DevAbs:get(BANDE..'Abs:NameBot') or 'وطن')
-local WaTaNTeaM = {' كول حبيبي ؟ اني '..NameBot..' ',' وياك القميل '..NameBot..' ',' اسمي القميل '..NameBot..' '}
-DevAbs2 = math.random(#WaTaNTeaM) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM[DevAbs2] , 1, 'html') 
+local Dev-BANDE = {' كول حبيبي ؟ اني '..NameBot..' ',' وياك القميل '..NameBot..' ',' اسمي القميل '..NameBot..' '}
+DevAbs2 = math.random(#Dev-BANDE) 
+Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE[DevAbs2] , 1, 'html') 
 return false
 end
 if text == 'اسم البوت' or text == 'البوت شنو اسمه' or text == 'شسمه البوت' or text == 'البوت شسمه' then
 NameBot = (DevAbs:get(BANDE..'Abs:NameBot') or 'وطن') 
-local WaTaNTeaM = {"اسمي القميل "..NameBot.." "} 
-DevAbs2 = math.random(#WaTaNTeaM) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM[DevAbs2] , 1, 'html') 
+local Dev-BANDE = {"اسمي القميل "..NameBot.." "} 
+DevAbs2 = math.random(#Dev-BANDE) 
+Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE[DevAbs2] , 1, 'html') 
 return false
 end
 if text and text == (DevAbs:get(BANDE..'Abs:NameBot') or 'وطن') then 
@@ -5656,14 +5656,14 @@ name = string.gsub(name,'⏰','⏰')
 name = string.gsub(name,'📺','📺')
 name = string.gsub(name,'🎚','🎚')
 name = string.gsub(name,'☎️','☎️')
-WaTaNTeaM = '✯︙اول واحد يدز هذا السمايل يربح ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙اول واحد يدز هذا السمايل يربح ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum'..msg.chat_id_) and not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ سمايلات للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ سمايلات للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -5714,14 +5714,14 @@ name = string.gsub(name,'حاسوب','س ا ح و ب')
 name = string.gsub(name,'انترنيت','ا ت ن ر ن ي ت')
 name = string.gsub(name,'ساحه','ح ا ه س')
 name = string.gsub(name,'جسر','ر ج س')
-WaTaNTeaM = '✯︙اول واحد يرتبها يربح ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙اول واحد يرتبها يربح ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum'..msg.chat_id_) and not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ ترتيب للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ ترتيب للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -5780,14 +5780,14 @@ name = string.gsub(name,'الثلج','انا ابن الماء فان تركون
 name = string.gsub(name,'الاسفنج','كلي ثقوب ومع ذالك احفض الماء فمن اكون ؟')
 name = string.gsub(name,'الصوت','اسير بلا رجلين ولا ادخل الا بالاذنين فمن انا ؟')
 name = string.gsub(name,'بلم','حامل ومحمول نصف ناشف ونصف مبلول فمن اكون ؟ ')
-WaTaNTeaM = '✯︙اول واحد يحلها يربح ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙اول واحد يحلها يربح ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum'..msg.chat_id_) and not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ حزوره للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ حزوره للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -5823,14 +5823,14 @@ name = string.gsub(name,'زرافه','🦒')
 name = string.gsub(name,'قنفذ','🦔')
 name = string.gsub(name,'تفاحه','🍎')
 name = string.gsub(name,'باذنجان','🍆')
-WaTaNTeaM = '✯︙ما معنى هذا السمايل :؟ ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙ما معنى هذا السمايل :؟ ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum2'..msg.chat_id_) and not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ المعاني للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ المعاني للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -5866,14 +5866,14 @@ name = string.gsub(name,'موعطشان','عطشان')
 name = string.gsub(name,'خوش ولد','موخوش ولد')
 name = string.gsub(name,'اني','مطي')
 name = string.gsub(name,'هادئ','عصبي')
-WaTaNTeaM = '✯︙ما هو عكس كلمة ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙ما هو عكس كلمة ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum3'..msg.chat_id_) and not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ العكس للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ العكس للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -5912,14 +5912,14 @@ name = string.gsub(name,'⌛️','⏳⏳⏳⏳⏳⌛️⏳⏳')
 name = string.gsub(name,'📅','📆📆📆📆📆📅📆📆')
 name = string.gsub(name,'👩‍⚖️','👨‍⚖️👨‍⚖️👨‍⚖️👨‍⚖️👨‍⚖️👩‍⚖️👨‍⚖️👨‍⚖️')
 name = string.gsub(name,'👨‍🎨','👩‍🎨👩‍🎨👨‍🎨👩‍🎨👩‍🎨👩‍🎨👩‍🎨👩‍🎨')
-WaTaNTeaM = '✯︙اول واحد يطلع المختلف يربح\n{'..name..'} '
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙اول واحد يطلع المختلف يربح\n{'..name..'} '
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum4'..msg.chat_id_) and not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ المختلف للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ المختلف للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -5952,16 +5952,16 @@ name = string.gsub(name,'شهر','امشي ___ ولا تعبر نهر')
 name = string.gsub(name,'شكه','يامن تعب يامن ___ يا من على الحاضر لكة')
 name = string.gsub(name,'القرد',' ___ بعين امه غزال')
 name = string.gsub(name,'يكحله','اجه ___ عماها')
-WaTaNTeaM = '✯︙اكمل المثال التالي ↫ ['..name..']'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙اكمل المثال التالي ↫ ['..name..']'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum5'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(BANDE..'Abs:GameNum5'..msg.chat_id_)
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ امثله للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ امثله للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -5984,16 +5984,16 @@ name = string.gsub(name,'15','25 - 10 = ?')
 name = string.gsub(name,'39','44 - 5 = ?')
 name = string.gsub(name,'5','12 + 1 - 8 = ?')
 name = string.gsub(name,'16','16 + 16 - 16 = ?')
-WaTaNTeaM = '✯︙اكمل المعادله التاليه ↫ ⤈\n{'..name..'} '
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙اكمل المعادله التاليه ↫ ⤈\n{'..name..'} '
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum6'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(BANDE..'Abs:GameNum6'..msg.chat_id_)
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ رياضيات للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ رياضيات للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -6015,16 +6015,16 @@ name = string.gsub(name,'تمساح','crocodile')
 name = string.gsub(name,'شاطئ','Beach')
 name = string.gsub(name,'غبي','Stupid')
 name = string.gsub(name,'صداقه','Friendchip')
-WaTaNTeaM = '✯︙ما معنى كلمة ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙ما معنى كلمة ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum7'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(BANDE..'Abs:GameNum7'..msg.chat_id_)
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ انكليزيه للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ انكليزيه للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -6065,16 +6065,16 @@ name = string.gsub(name,'لندن','✯︙ماهي عاصمه انجلترا ؟\
 name = string.gsub(name,'الانسان','✯︙ماهو الشئ الذي برأسه سبع فتحات ؟\n1- الهاتف\n2- التلفاز\n3- الانسان')
 name = string.gsub(name,'طوكيو','✯︙ماهي عاصمه اليابان ؟\n1- بانكول\n2- نيو دلهي\n3- طوكيو')
 name = string.gsub(name,'خديجه','✯︙من هي زوجه الرسول الاكبر منه سنآ ؟\n1- حفضه\n2- زينب\n3- خديجه')
-WaTaNTeaM = name..'\n✯︙ارسل الجواب الصحيح فقط'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = name..'\n✯︙ارسل الجواب الصحيح فقط'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 return false
 end end
 if text == DevAbs:get(BANDE..'Abs:GameNum8'..msg.chat_id_) then
 if not DevAbs:get(BANDE..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(BANDE..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(BANDE..'Abs:GameNum8'..msg.chat_id_)
-WaTaNTeaM = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ الاسئله للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md')
+Dev-BANDE = '✯︙مبروك لقد ربحت في اللعبه \n✯︙ارسل ↫ الاسئله للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md')
 end
 DevAbs:set(BANDE..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -6171,13 +6171,13 @@ end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'كت' and ChCheck(msg) or text == 'تويت' and ChCheck(msg) or text == '↫ كت ✯' and ChCheck(msg) then
 if not DevAbs:get(BANDE..'Abs:Lock:Games'..msg.chat_id_) then
-local WaTaNTeaM = {
+local Dev-BANDE = {
 'آخر مرة زرت مدينة الملاهي؟','آخر مرة أكلت أكلتك المفضّلة؟','الوضع الحالي؟\n‏1. سهران\n‏2. ضايج\n‏3. أتأمل','آخر شيء ضاع منك؟','كلمة أخيرة لشاغل البال؟','طريقتك المعتادة في التخلّص من الطاقة السلبية؟','شهر من أشهر العام له ذكرى جميلة معك؟','كلمة غريبة من لهجتك ومعناها؟🤓','‏- شيء سمعته عالق في ذهنك هاليومين؟','متى تكره الشخص الذي أمامك حتى لو كنت مِن أشد معجبينه؟','‏- أبرز صفة حسنة في صديقك المقرب؟','هل تشعر أن هنالك مَن يُحبك؟','اذا اكتشفت أن أعز أصدقائك يضمر لك السوء، موقفك الصريح؟','أجمل شيء حصل معك خلال هاليوم؟','صِف شعورك وأنت تُحب شخص يُحب غيرك؟👀💔','كلمة لشخص غالي اشتقت إليه؟💕','آخر خبر سعيد، متى وصلك؟','أنا آسف على ....؟','أوصف نفسك بكلمة؟','صريح، مشتاق؟','‏- صريح، هل سبق وخذلت أحدهم ولو عن غير قصد؟','‏- ماذا ستختار من الكلمات لتعبر لنا عن حياتك التي عشتها الى الآن؟💭','‏- فنان/ة تود لو يدعوكَ على مائدة عشاء؟😁❤','‏- تخيّل شيء قد يحدث في المستقبل؟','‏- للشباب | آخر مرة وصلك غزل من فتاة؟🌚','شخص أو صاحب عوضك ونساك مُر الحياة ما اسمه ؟','| اذا شفت حد واعجبك وعندك الجرأه انك تروح وتتعرف عليه ، مقدمة الحديث شو راح تكون ؟.','كم مره تسبح باليوم','نسبة النعاس عندك حاليًا؟','لو فقط مسموح شخص واحد تتابعه فالسناب مين بيكون ؟','يهمك ملابسك تكون ماركة ؟','وش الشيء الي تطلع حرتك فيه و زعلت ؟','عندك أخوان او خوات من الرضاعة؟','عندك معجبين ولا محد درا عنك؟','أصعب صفة قد تتواجد في الرجل .؟','كم المده الي تخليك توقع بحب الشخص؟.','تحس انك مستعد للقاء الله ولا باقي.؟','متصالح مع نفسك؟.','يسكر على أصبعك الباب ولا تعض لسانك  بالغلط؟!','عندك غمازات؟.','‏ألوانك المفضّلة؟','ردة فعلك لما تنظلم من شخص ؟','وش الحب بنظرك؟','أكثر شيء تقدره في الصداقات؟','‏لوخيروك ⁞ الاكل لو النت ؟!','عاجبك وجودك في التلي ولا تتمنى تحذفة.؟','افضل هديه ممكن تناسبك؟','شعورك الحالي في جملة؟','أنا حزين جداً أجعلني أبتسم.؟','بماذا يتعافى المرء؟','تاك لشخص نفسيه؟','شاركنا بيت شعري حزين على ذوقك.؟','اغنية عندك بيها ذكريات؟','اشياء تفتخر انك م سويتها ؟','الصراحة وقاحة ولا صدق تعامل.؟','ايهم اصدق نظرة العين او نبرة الصوت ؟','‏قلّة المال لدى الرجل في هذا الزمن يعتبرها العديد كانها عيب، مع أم ضد؟','إيهما تُفضل حُب ناجح أم صداقة دائمة.؟','على نياتكُم تُرزقون تاك لشخص ينطبق علية هذا الشيء.؟','اكثر كلمة ترفع ضغطك ؟','من أصحاب الماضي والحنين ولا الصفحات المطوية.؟','من أصحاب النسيان او التجاوز رغم الذكرى.؟','غزل بلهجتك ؟','مصروفك كم؟.','للحتيت ⁞ ماذا تفضّلين أن تكون مهنة شريك حياتك المستقبلي.؟','يومك ضاع على؟','ما الذي اسعدك اليوم .؟','كيف تتعامل مع الشخص المُتطفل ( الفضولي ) ؟','أصعب صفة قد تتواجد في المرأة.؟','مع أو ضد لو كان خيراً لبقئ.؟','نصيحة لكل شخص يذكر أحد بغيابة بالسوء.؟','كل شيء يهون الا ؟','هل أنت من النوع الذي يواجه المشاكل أو من النوع الذي يهرب ؟','كلمه لشخص خانك!؟.','تحب تحتفظ بالذكريات ؟','شاركنا أقوى بيت شِعر من تأليفك؟','‏اسرع شيء يحسّن من مزاجك؟','كلمتك التسليكيه ؟','كم ساعات نومك؟.','عندك فوبيا او خوف شديد من شيء معين ؟','موهبة تفوز بمدح الناس لك.؟','قدوتك من الأجيال السابقة؟','شخص تتمنئ له الموت؟.','عادةً تُحب النقاش الطويل أم تحب الاختصار؟','تاك لشخص نيته زباله🌚؟','صوتك حلو ؟ .','كلمتين تكررها دايم؟!','افضل روايه قريتيها؟.','متى حدث التغيير الكبير والملحوظ في شخصيتك؟','أكثر اكلهه تحبها؟.','‏كلما ازدادت ثقافة المرء ازداد بؤسه','تتفق.؟','اغبى كذبه صدقتها بطفولتك؟.','كم المده الي تخليك توقع بحب الشخص؟.','تسامح شخص وجع قلبك ؟.','ردة فعلك لما تنظلم من شخص ؟','شيء يعدل نفسيتك بثواني.؟','‏تتوقع الإنسان يحس بقرب موته؟','وقت حزنك تلجأ لمن يخفف عنك.؟','‏أكثر شيء شخصي ضاع منك؟','تزعلك الدنيا ويرضيك ؟','ما الذي يشغل بالك في الفترة الحالية؟','نهارك يصير أجمل بوجود ..؟','حسيت انك ظلمت شخص.؟','صفة يطلقها عليك من حولك بكثرة؟','‏يوم لا يمكنك نسيانه؟','أكثر اكلهه تحبها؟.','اخر كلمة قالها لك حبيبك؟.','من الشخص الاقرب لقلبك؟.','كم المده الي تخليك توقع بحب الشخص؟.','ماهي الهدية التي تتمنى أن تنتظرك يومًا أمام باب منزلك؟','‏اسم او تاك لشخص لا ترتاح في يومك إلا إذا حاجيته؟','صديق أمك ولا أبوك. ؟','لماذا الأشياء التي نريدها بشغف تأتي متأخرة؟','‏تقبل بالعودة لشخص كسر قلبك مرتين؟','افضل هديه ممكن تناسبك؟','كلمة غريبة ومعناها؟','اذا اشتقت تكابر ولا تبادر ؟.','بامكانك تنزع شعور من قلبك للابد ، ايش هو؟.','لو بتغير اسمك ايش بيكون الجديد ؟','‏شخصية لا تستطيع تقبلها؟','ما هي طريقتك في الحصول على الراحة النفسية؟','‏ايموجي يوصف مزاجك حاليًا بدقة؟','تاريخ ميلادك؟','كيف تحد الدولة من الفقر المُتزايد.؟','‏شي مستحيل يتغير فيك؟','لو اخذوك لمستشفى المخابيل كيف تثبت انت صاحي؟','إيموجي يعبّر عن مزاجك الحالي؟','وقت حزنك تلجأ لمن يخفف عنك.؟','اعترف باي حاجه ؟','شاركني آخر صورة جميلة من كاميرا هاتفك.؟','متصالح مع نفسك؟.','لو عندك امنيه وبتحقق وش هي؟.','هل انت شخص مادي.؟','أخر اتصال جاك من مين ؟','تاك لصديقك المُقرب؟.','تحب العلاقات العاطفيه ولا الصداقه؟.','العين الي تستصغرك........؟','تجامل الناس ولا اللي بقلبك على لسانك؟','وقت حزنك تلجأ لمن يخفف عنك.؟','اكثر المتابعين عندك باي برنامج؟','صفه تتمناها بشريك حياتك؟.','من اصدق في الحب الولد ولا البنت؟.','يرد عليك متأخر على رسالة مهمة وبكل برود، موقفك؟','كلمة لشخص بعيد؟','رحتي لعرس وأكتشفتي العريس حبيبك شنو ردة فعلك.؟','تسامح شخص وجع قلبك ؟.','احقر موقف صار لك؟.','ماذا لو كانت مشاعر البشر مرئية ؟','وين نلقى السعاده برايك؟','قد تخيلت شي في بالك وصار ؟','صفة يطلقها عليك الشخص المفضّل؟','اخر خيانه؟.','تحب تحتفظ بالذكريات ؟','لو بتغير اسمك ايش بيكون الجديد ؟','الاعتذار أخلاق ولا ضعف.؟','هل أنت من النوع الذي يواجه المشاكل أو من النوع الذي يهرب ؟','‏ تكره أحد من قلبك ؟','تاك لشخص وكوله اعترف لك؟','مع أو ضد لو كان خيراً لبقئ.؟','‏هل لديك شخص لا تخفي عنه شيئًا؟','اغنيه تأثر بيك؟','المطوعة والعاقلة من شلتك.؟','مواصفات امير/ة احلامك؟.','‏كلمة لصديقك البعيد؟','تتابع انمي؟ إذا نعم ما أفضل انمي شاهدته؟','قرارتك راضي عنها ام لا ؟','تسامح شخص سبب في بكائك.؟','لو حصل واشتريت جزيرة، ماذا ستختار اسمًا لها.؟','اغنيتك المفضلة؟.','شاركنا اقوئ نكتة عندك.؟','ماذا لو عاد مُشتاقاً.؟','مسلسل كرتوني له ذكريات جميلة عندك؟','أخر اتصال جاك من مين ؟','حيوانك المفضل؟','اول ولد لك شنو رح تسميه ؟','سبب الرحيل.؟','قولها بلهجتك « لا أملك المال ».؟','نهارك يصير أجمل بوجود ..؟','‏لو خيروك، الزواج بمن تُحب او تاخذ مليون دولار؟','تاك لشخص سوالفه حلوه ؟','تصرف لا يُمكن أن تتحمله.؟','ماهي الاطباع فيك التي تحاول اخفائها عن الناس؟.','شيء عندك اهم من الناس؟','قد تخيلت شي في بالك وصار ؟','تمحي العشرة الطيبة عشان موقف ماعجبك أو سوء فهم.؟','جربت شعور احد يحبك بس انت متكدر تحبه؟','بنفسك تبوس شخص بهاي الحظه؟','إذا كانت الصراحة ستبعد عنك من تحب هل تمتلك الشجاعة للمصارحة ام لا .؟','أكمل الدعاء بما شئت ‏اللهم أرزقني ..؟','الصق اخر شيء نسخته .؟','‏تفضل جولة في الغابة أم جولة بحرية؟','‏تاك لشخص لديك لا تخفي عنه شي؟','كلمة غريبة ومعناها؟','‏اوقات لا تحب ان يكلمك فيها احد؟','تملك وسواس من شيء معين ؟','اشمر مقطع من اغنيه متطلع منراسك؟','هل تتأثرين بالكلام الرومانسي من الشباب؟','ما اول شيء يلفت انتباهك في الرجل؟','ماذا تفعلين اذا تعرضتِ للتحرش من قبل شخص ما..؟','اذا كنت شخصاً غني هل توافق على الزواج من فتاة فقيرة..؟','ما هو أكثر شئ لا تستطيع تحمله..؟','ما هي نقاط الضعف في شخصيتك..؟','هل توافق أن زوجتك تدفع الحساب في إحدي المطاعم وأنت موجود؟','ماذا تفعل لو أكتشفت ان زوجتك على علاقة بصديقك؟','ما هي أكثر صفة تكرهها في زوجتك..؟','اذا كان لديك فرصة للخروج مع من سوف تخرج ربعك او زوجتك..؟','ماذا تفعل عندما تري دموع زوجتك..؟','إلى أي الرجال تُريدين أن يكون انتماؤك؟','كم مرة خُدعت في أشخاصٍ، وثقتِ فيهم ثقةً عمياء؟','هل ما زال أصدقاء الطفولة أصدقاءً لك حتى الآن؟','هل ترغبين في أن يكون خطيبك وسيمًا؟','كم مرةٍ فعلت شيئًا لا ترغبين في الإفصاح عنه؟','هل استطعت أن تُحققي آمالك العلمية والعاطفية؟','أكثر شئ ندمت على فعله..؟','هل تشعرين أنك فتاة محظوظة..؟','هل علاقة الحب التي كانت في صغرك، مازالت مستمرة؟','ما هو أكثر شئ يفرحك في هذه الحياة..؟','كم مرة أردت شراء ملابس لأنها جميلة ولكنها لا تناسبك..؟','كم عدد المرات التي قمت فيها بإستبدال شئ اشتريته ولم يعجبك بعد ذلك.؟','كم مرة قمت بكسر الرجيم من أجل تناول طعامك المفضل..؟','هل تعرضت للظلم يوماً ما وعلى يد من..؟','هل كذبت على والديك من قبل..؟','هل خرجتي مع شخص تعرفتي عليه من خلال التليكرام من قبل..؟','هل لو تقدم شخص لاختك من أجل خطبتها وقامت برفضه تقبلين به..؟','لمن تقولين لا أستطيع العيش بدونك..؟','كم عدد المرات التي تعرضتِ فيها إلى أزمة نفسية وأردتِ الصراخ بأعلى صوتك..؟','ماذا تقول للبحر؟','أصعب صفة قد تتواجد في رجل؟','ما أجمل الحياة بدون ...؟','لماذا لم تتم خطبتك حتى الآن..؟','نسبة رضاك عن الأشخاص من حولك هالفترة ؟','ما السيء في هذه الحياة ؟','الفلوس او الحب ؟','أجمل شيء حصل معك خلال هذا الاسبوع ؟','سؤال ينرفزك ؟','كم في حسابك البنكي ؟','شي عندك اهم من الناس ؟','اول ولد او بنت الك شنو تسمي ؟','تفضّل النقاش الطويل او تحب الاختصار ؟','عادي تتزوج او تتزوجين من خارج العشيره ؟','كم مره حبيت ؟','تبادل الكراهية بالكراهية؟ ولا تحرجه بالطيب ؟','قلبي على قلبك مهما صار لمنو تكولها ؟','اكثر المتابعين عندك باي برنامج ؟','نسبة النعاس عندك حاليًا ؟','نسبه الندم عندك للي وثقت بيهم ؟','اول شخص تعرفت عليه بالتليكرام بعده موجود ؟','اذا فديوم شخص ضلمك شنو موقفك ؟','افضل عمر للزواج برئيك ؟','انت من النوع الي دائما ينغدر من اقرب الناس اله ؟','ماهو حيوانك المفضل ؟','تاريخ ميلادك ؟','لونك المفضل ؟','انت من النوع العاطفي والي ميكدر يكتم البداخله ؟','اذا فديوم شخص خانك ويريد يرجعلك تقبل ؟','شي بالحياه مخليك عايش لحد الان ؟','تحب النوم لو الشغل ؟','افضل مكان رحت عليه ؟','اختصر الماضي بكلمه وحده ؟','هل سبق وكنت مصر على أمر ما ومن ثم اكتشفت أنك كنت على خطأ ؟','اكثر كلمة ترفع ضغطك ؟','مع او ضد سب البنت للدفاع عن نفسها ؟','يهمك ظن الناس بيك لو لا؟','عبّر عن مودك بصوره ؟','اغلب وقتك ضايع في ؟','يوم متكدر تنساه ؟','تحس انك محظوظ بالاشخاص الي حولك ؟','تستغل وقت فراغك بشنو ؟','مع او ضد مقولة محد يدوم ل احد ؟','لو اخذوك مستشفى المجانين كيف تثبت لهم انك صاحي ؟','مغني تلاحظ أن صوته يعجب الجميع إلا أنت ؟','اخر خيانه ؟','تصرف ماتتحمله ؟','هل يمكنك الكذب والاستمرار بارتكاب الأخطاء كمحاولة منك لعدم الكشف أنك مخطئ ؟','الصق اخر شي نسخته ؟','عمرك انتقمت من أحد ؟','هل وصلك رسالة غير متوقعة من شخص وأثرت فيك ؟','‏-لو امتلكت العصا السحرية ليوم واحد ماذا ستفعل ؟','جابو طاري شخص تكره عندك تشاركهم ولا تمنعهم ؟','أمنية كنت تتمناها وحققتها ؟','هل التعود على شخص والتحدث معه بشكل يومي يعتبر نوع من أنواع الحب ؟','نسبة جمال صوتك ؟','صفة يطلقها عليك الشخص المفضل ؟','شنو هدفك بالمستقبل القريب ؟','تحب القرائه ؟','كليه تتمنى تنقبل بيها ؟',
 'أطول مدة قضيتها بعيد عن أهلك ؟','لو يجي عيد ميلادك تتوقع يجيك هدية؟','يبان عليك الحزن من " صوتك - ملامحك','وين تشوف نفسك بعد سنتين؟','وش يقولون لك لما تغني ؟','عندك حس فكاهي ولا نفسية؟','كيف تتصرف مع الشخص الفضولي ؟','كيف هي أحوال قلبك؟','حاجة تشوف نفسك مبدع فيها ؟','متى حبيت؟','شيء كل م تذكرته تبتسم ...','العلاقه السريه دايماً تكون حلوه؟','صوت مغني م تحبه','لو يجي عيد ميلادك تتوقع يجيك هدية؟','اذا احد سألك عن شيء م تعرفه تقول م اعرف ولا تتفلسف ؟','مع او ضد : النوم افضل حل لـ مشاكل الحياة؟','مساحة فارغة (..............) اكتب اي شيء تبين','اغرب اسم مر عليك ؟','عمرك كلمت فويس احد غير جنسك؟','اذا غلطت وعرفت انك غلطان تحب تعترف ولا تجحد؟','لو عندك فلوس وش السيارة اللي بتشتريها؟','وش اغبى شيء سويته ؟','شيء من صغرك ماتغير فيك؟','وش نوع الأفلام اللي تحب تتابعه؟','وش نوع الأفلام اللي تحب تتابعه؟','تجامل احد على حساب مصلحتك ؟','تتقبل النصيحة من اي شخص؟','كلمه ماسكه معك الفترة هذي ؟','متى لازم تقول لا ؟','اكثر شيء تحس انه مات ف مجتمعنا؟','تؤمن ان في "حُب من أول نظرة" ولا لا ؟.','تؤمن ان في "حُب من أول نظرة" ولا لا ؟.','هل تعتقد أن هنالك من يراقبك بشغف؟','اشياء اذا سويتها لشخص تدل على انك تحبه كثير ؟','اشياء صعب تتقبلها بسرعه ؟','اقتباس لطيف؟','أكثر جملة أثرت بك في حياتك؟','عندك فوبيا من شيء ؟.',
 'اكثر لونين تحبهم مع بعض؟','أجمل بيت شعر سمعته ...','سبق وراودك شعور أنك لم تعد تعرف نفسك؟','تتوقع فيه احد حاقد عليك ويكرهك ؟','أجمل سنة ميلادية مرت عليك ؟','لو فزعت/ي لصديق/ه وقالك مالك دخل وش بتسوي/ين؟','وش تحس انك تحتاج الفترة هاذي ؟','يومك ضاع على؟','@منشن .. شخص تخاف منه اذا عصب ...','فيلم عالق في ذهنك لا تنساه مِن روعته؟','تختار أن تكون غبي أو قبيح؟','الفلوس او الحب ؟','أجمل بلد في قارة آسيا بنظرك؟','ما الذي يشغل بالك في الفترة الحالية؟','احقر الناس هو من ...','وين نلقى السعاده برايك؟','اشياء تفتخر انك م سويتها ؟','تزعلك الدنيا ويرضيك ؟','وش الحب بنظرك؟','افضل هديه ممكن تناسبك؟','كم في حسابك البنكي ؟','كلمة لشخص أسعدك رغم حزنك في يومٍ من الأيام ؟','عمرك انتقمت من أحد ؟!','ما السيء في هذه الحياة ؟','غنية عندك معاها ذكريات🎵🎻','/','أفضل صفة تحبه بنفسك؟','اكثر وقت تحب تنام فيه ...','أطول مدة نمت فيها كم ساعة؟','أصعب قرار ممكن تتخذه ؟','أفضل صفة تحبه بنفسك؟','اكثر وقت تحب تنام فيه ...','أنت محبوب بين الناس؟ ولاكريه؟','إحساسك في هاللحظة؟','اخر شيء اكلته ؟','تشوف الغيره انانيه او حب؟','اذكر موقف ماتنساه بعمرك؟','اكثر مشاكلك بسبب ؟','اول ماتصحى من النوم مين تكلمه؟','آخر مرة ضحكت من كل قلبك؟','لو الجنسية حسب ملامحك وش بتكون جنسيتك؟','اكثر شيء يرفع ضغطك','اذكر موقف ماتنساه بعمرك؟','لو قالوا لك  تناول صنف واحد فقط من الطعام لمدة شهر .',
 'كيف تشوف الجيل ذا؟','ردة فعلك لو مزح معك شخص م تعرفه ؟','احقر الناس هو من ...','تحب ابوك ولا امك','آخر فيلم مسلسل والتقييم🎥؟','أقبح القبحين في العلاقة: الغدر أو الإهمال🤷🏼؟','كلمة لأقرب شخص لقلبك🤍؟','حط@منشن لشخص وقوله "حركتك مالها داعي"😼!','اذا جاك خبر مفرح اول واحد تعلمه فيه مين💃🏽؟','طبع يمكن يخليك تكره شخص حتى لو كنت تُحبه🙅🏻‍♀️؟','افضل ايام الاسبوع عندك🔖؟','يقولون ان الحياة دروس ، ماهو أقوى درس تعلمته من الحياة🏙؟','تاريخ لن تنساه📅؟','تحب الصيف والا الشتاء❄️☀️؟','شخص تحب تستفزه😈؟','شنو ينادونك وانت صغير (عيارتك)👼🏻؟','عقل يفهمك/ج ولا قلب يحبك/ج❤️؟','اول سفره لك وين رح تكون✈️؟','كم عدد اللي معطيهم بلوك👹؟','نوعية من الأشخاص تتجنبهم في حياتك❌؟','شاركنا صورة او فيديو من تصويرك؟📸','كم من عشره تعطي حظك📩؟','اكثر برنامج تواصل اجتماعي تحبه😎؟','من اي دوله انت🌍؟','اكثر دوله ودك تسافر لها🏞؟','مقولة "نكبر وننسى" هل تؤمن بصحتها🧓🏼؟','تعتقد فيه أحد يراقبك👩🏼‍💻؟','لو بيدك تغير الزمن ، تقدمه ولا ترجعه🕰؟','مشروبك المفضل🍹؟','‏قم بلصق آخر اقتباس نسخته؟💭','كم وزنك/ج طولك/ج؟🌚','كم كان عمرك/ج قبل ٨ سنين😈؟','دوله ندمت انك سافرت لها😁؟','لو قالو لك ٣ أمنيات راح تتحقق عالسريع شنو تكون🧞‍♀️؟','‏- نسبة احتياجك للعزلة من 10📊؟','شخص تحبه حظرك بدون سبب واضح، ردة فعلك🧐؟','مبدأ في الحياة تعتمد عليه دائما🕯؟',
 }  
-Dev_Abs(msg.chat_id_, msg.id_, 1, ''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'' , 1, 'md')  
+Dev_Abs(msg.chat_id_, msg.id_, 1, ''..Dev-BANDE[math.random(#Dev-BANDE)]..'' , 1, 'md')  
 return false
 end
 end
@@ -6445,8 +6445,8 @@ if not Sudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevAbs:del(BANDE..'Abs:ChId')
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الاشتراك الاجباري'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الاشتراك الاجباري'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 return false  
 end
@@ -6472,7 +6472,7 @@ end end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if SudoBot(msg) then
 if text == 'اذاعه للكل بالتوجيه' and tonumber(msg.reply_to_message_id_) > 0 then
-function WaTaNTeaM(extra,result,success)
+function Dev-BANDE(extra,result,success)
 if DevAbs:get(BANDE.."Abs:Send:Bot"..BANDE) and not AbsSudo(msg) then 
 send(msg.chat_id_, msg.id_,"✯︙الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -6487,7 +6487,7 @@ tdcli_function({ID="ForwardMessages", chat_id_ = v, from_chat_id_ = msg.chat_id_
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙تم اذاعة رسالتك بالتوجيه \n✯︙‏في ↫ ❨ '..#GpList..' ❩ مجموعه \n✯︙والى ↫ ❨ '..#PvList..' ❩ مشترك \n ✓', 1, 'md')
 end
-getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),WaTaNTeaM)
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),Dev-BANDE)
 end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -6510,7 +6510,7 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'ياسورس' then
 local url,res = https.request('https://api-watan.ml/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
+if data.Ch_Member.Info_Dev-BANDE ~= true then
 Dev_Abs(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙قناة السورس @WaTaNTeaM')   
 return false 
 end
@@ -6544,13 +6544,13 @@ end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تعطيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevAbs:set(BANDE.."Abs:Kick:Me"..msg.chat_id_, true)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امر اطردني'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امر اطردني'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevAbs:del(BANDE.."Abs:Kick:Me"..msg.chat_id_)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امر اطردني'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امر اطردني'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "نزلني" and ChCheck(msg) then
@@ -6569,23 +6569,23 @@ end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تعطيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevAbs:set(BANDE.."Abs:Del:Me"..msg.chat_id_, true)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امر نزلني'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امر نزلني'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevAbs:del(BANDE.."Abs:Del:Me"..msg.chat_id_)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امر نزلني'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امر نزلني'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text and (text == 'تفعيل التاك' or text == 'تفعيل التاك للكل' or text == 'تفعيل تاك للكل') and Admin(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امر تاك للكل'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امر تاك للكل'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:TagAll'..msg.chat_id_)
 end
 if text and (text == 'تعطيل التاك' or text == 'تعطيل التاك للكل' or text == 'تعطيل تاك للكل') and Admin(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امر تاك للكل'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امر تاك للكل'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:TagAll'..msg.chat_id_,true)
 end
 if Admin(msg) then
@@ -6641,13 +6641,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙انضمام الاعضاء اليوم 
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تعطيل تفاعلي" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل تفاعلي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل تفاعلي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:msg:Abs'..msg.chat_id_) 
 end
 if text == "تفعيل تفاعلي" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل تفاعلي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل تفاعلي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:msg:Abs'..msg.chat_id_,true)  
 end
 if DevAbs:get(BANDE.."Abs:msg:Abs"..msg.chat_id_) then
@@ -6680,7 +6680,7 @@ if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'ح
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') and ChCheck(msg) then 
 if not DevAbs:get(BANDE..'Abs:Lock:Stupid'..msg.chat_id_) then
 local username = text:match('^هينه @(.*)') or text:match('^هينها @(.*)') 
-function WaTaNTeaM(extra,result,success)
+function Dev-BANDE(extra,result,success)
 if result.id_ then  
 if tonumber(result.id_) == tonumber(BANDE) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'شو تمضرط اكو واحد يهين نفسه؟🤔👌🏿', 1, 'md')  
@@ -6698,15 +6698,15 @@ if DevAbs:sismember(BANDE.."Abs:AbsConstructor:"..msg.chat_id_,result.id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-local WaTaNTeaM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md') 
-local WaTaNTeaM = { "لكك جرجف @"..username.." احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش لكك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪",}
-Dev_Abs(msg.chat_id_, result.id_, 1,''..WaTaNTeaM[math.random(#WaTaNTeaM)], 1, 'html') 
+local Dev-BANDE = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md') 
+local Dev-BANDE = { "لكك جرجف @"..username.." احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش لكك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪",}
+Dev_Abs(msg.chat_id_, result.id_, 1,''..Dev-BANDE[math.random(#Dev-BANDE)], 1, 'html') 
 else  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙العضو غير موجود في المجموعه', 1, 'md') 
 end 
 end 
-resolve_username(username,WaTaNTeaM)
+resolve_username(username,Dev-BANDE)
 end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -6729,10 +6729,10 @@ if DevAbs:sismember(BANDE.."Abs:AbsConstructor:"..msg.chat_id_,result.sender_use
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-local WaTaNTeaM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md') 
-local WaTaNTeaM = {"لكك جرجف احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش فاشل لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","دمشي لك ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪","حبيبي راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪"} 
-Dev_Abs(msg.chat_id_, result.id_, 1,''..WaTaNTeaM[math.random(#WaTaNTeaM)], 1, 'md') 
+local Dev-BANDE = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md') 
+local Dev-BANDE = {"لكك جرجف احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش فاشل لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","دمشي لك ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪","حبيبي راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪"} 
+Dev_Abs(msg.chat_id_, result.id_, 1,''..Dev-BANDE[math.random(#Dev-BANDE)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
 else 
@@ -6751,10 +6751,10 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, result.id_, 1, 'مواححح احلاا بوسةة المطوريي😻🔥💗', 1, 'html')
 return false
 end 
-local WaTaNTeaM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md') 
-local WaTaNTeaM = {"مواححح افيش عافيههه😍🔥💗","امممووااهحح شهلعسل🥺🍯💘","مواححح،ءوفف اذوب🤤💗"} 
-Dev_Abs(msg.chat_id_, result.id_, 1,''..WaTaNTeaM[math.random(#WaTaNTeaM)], 1, 'md') 
+local Dev-BANDE = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md') 
+local Dev-BANDE = {"مواححح افيش عافيههه😍🔥💗","امممووااهحح شهلعسل🥺🍯💘","مواححح،ءوفف اذوب🤤💗"} 
+Dev_Abs(msg.chat_id_, result.id_, 1,''..Dev-BANDE[math.random(#Dev-BANDE)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
 else 
@@ -6773,10 +6773,10 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, result.id_, 1, 'تعال مطوريي محتاجيكك🏃🏻‍♂️♥️', 1, 'html')
 return false
 end 
-local WaTaNTeaM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md') 
-local WaTaNTeaM = {"تتعال ححب محتاجيك🙂🍭","تعال يولل استاذكك ايريدككك😒🔪","يمعوود تعاال يريدوكك🤕♥️","تعال لكك ديصيحوك😐🖤"} 
-Dev_Abs(msg.chat_id_, result.id_, 1,''..WaTaNTeaM[math.random(#WaTaNTeaM)], 1, 'md') 
+local Dev-BANDE = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md') 
+local Dev-BANDE = {"تتعال ححب محتاجيك🙂🍭","تعال يولل استاذكك ايريدككك😒🔪","يمعوود تعاال يريدوكك🤕♥️","تعال لكك ديصيحوك😐🖤"} 
+Dev_Abs(msg.chat_id_, result.id_, 1,''..Dev-BANDE[math.random(#Dev-BANDE)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
 else 
@@ -6788,7 +6788,7 @@ end
 if text and text:match('^صيحه @(.*)') and ChCheck(msg) or text and text:match('^صيح @(.*)') and ChCheck(msg) then 
 if not DevAbs:get(BANDE..'Abs:Lock:Stupid'..msg.chat_id_) then
 local username = text:match('^صيحه @(.*)') or text:match('^صيح @(.*)') 
-function WaTaNTeaM(extra,result,success)
+function Dev-BANDE(extra,result,success)
 if result.id_ then  
 if tonumber(result.id_) == tonumber(BANDE) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'فهمنيي شلوون راحح اصيح نفسيي؟😶💔', 1, 'md')  
@@ -6798,15 +6798,15 @@ if tonumber(result.id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'تعال مطوريي محتاجيكك🏃🏻‍♂️♥️ @'..username, 1, 'html') 
 return false  
 end  
-local WaTaNTeaM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,WaTaNTeaM, 1, 'md') 
-local WaTaNTeaM = { "تتعال ححب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذكك ايريدككك😒🔪","يمعوود @"..username.." تعاال يريدوكك🤕♥️","تعال لكك @"..username.." ديصيحوك😐🖤",}
-Dev_Abs(msg.chat_id_, result.id_, 1,''..WaTaNTeaM[math.random(#WaTaNTeaM)], 1, 'html') 
+local Dev-BANDE = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,Dev-BANDE, 1, 'md') 
+local Dev-BANDE = { "تتعال ححب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذكك ايريدككك😒🔪","يمعوود @"..username.." تعاال يريدوكك🤕♥️","تعال لكك @"..username.." ديصيحوك😐🖤",}
+Dev_Abs(msg.chat_id_, result.id_, 1,''..Dev-BANDE[math.random(#Dev-BANDE)], 1, 'html') 
 else  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙العضو غير موجود في المجموعه', 1, 'md') 
 end 
 end 
-resolve_username(username,WaTaNTeaM)
+resolve_username(username,Dev-BANDE)
 end
 end
 end
@@ -7719,8 +7719,8 @@ send(msg.chat_id_, msg.id_,'✯︙لقبك ↫ '..GetCustomTitle(msg.sender_user
 end
 end
 if text == "راسلني" and ChCheck(msg) then
-WaTaNTeaM = {"ها هلاو","انطق","كول","تفضل","احبك","عمري","لاف"};
-send(msg.sender_user_id_, 0,WaTaNTeaM[math.random(#WaTaNTeaM)])
+Dev-BANDE = {"ها هلاو","انطق","كول","تفضل","احبك","عمري","لاف"};
+send(msg.sender_user_id_, 0,Dev-BANDE[math.random(#Dev-BANDE)])
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "صلاحيتي" or text == "صلاحياتي" and ChCheck(msg) then 
@@ -7759,23 +7759,23 @@ end end end
 if AbsConstructor(msg) then
 if text == "تفعيل الحظر" and ChCheck(msg) or text == "تفعيل الطرد" and ChCheck(msg) then
 DevAbs:del(BANDE.."Abs:Lock:KickBan"..msg.chat_id_)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الطرد والحظر'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الطرد والحظر'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 if text == "تعطيل الحظر" and ChCheck(msg) or text == "تعطيل الطرد" and ChCheck(msg) then
 DevAbs:set(BANDE.."Abs:Lock:KickBan"..msg.chat_id_,"true")
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الطرد والحظر'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الطرد والحظر'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 if text == "تفعيل الكتم" and ChCheck(msg) or text == "تفعيل التقييد" and ChCheck(msg) then
 DevAbs:del(BANDE.."Abs:Lock:MuteTked"..msg.chat_id_)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الكتم والتقيد'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الكتم والتقيد'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 if text == "تعطيل الكتم" and ChCheck(msg) or text == "تعطيل التقييد" and ChCheck(msg) then
 DevAbs:set(BANDE.."Abs:Lock:MuteTked"..msg.chat_id_,"true")
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الكتم والتقيد'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الكتم والتقيد'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 end
 if AbsConstructor(msg) then
@@ -8549,8 +8549,8 @@ end
 if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ == 0 and ChCheck(msg) then  
 if Constructor(msg) then
 TXT = text:match("^اضف رسائل (%d+)$")
-DevAbs:set('WaTaNTeaM:'..BANDE..'id:user'..msg.chat_id_,TXT)  
-DevAbs:setex('WaTaNTeaM:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
+DevAbs:set('Dev-BANDE:'..BANDE..'id:user'..msg.chat_id_,TXT)  
+DevAbs:setex('Dev-BANDE:'..BANDE.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل عدد الرسائل الان \n✯︙ارسل الغاء لالغاء الامر ", 1, "md")
 Dev_Abs(msg.chat_id_, msg.id_, 1,numd, 1, 'md') 
 else 
@@ -8570,8 +8570,8 @@ end
 if text and text:match("^اضف نقاط (%d+)$") and msg.reply_to_message_id_ == 0 and ChCheck(msg) then  
 if Constructor(msg) then
 TXT = text:match("^اضف نقاط (%d+)$")
-DevAbs:set('WaTaNTeaM:'..BANDE..'ids:user'..msg.chat_id_,TXT)  
-DevAbs:setex('WaTaNTeaM:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
+DevAbs:set('Dev-BANDE:'..BANDE..'ids:user'..msg.chat_id_,TXT)  
+DevAbs:setex('Dev-BANDE:'..BANDE.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل عدد النقاط الان \n✯︙ارسل الغاء لالغاء الامر ", 1, "md")
 Dev_Abs(msg.chat_id_, msg.id_, 1,numd, 1, 'md') 
 else 
@@ -8599,8 +8599,8 @@ end
 tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100",""),message_id_ = msg.reply_to_message_id_,disable_notification_ = 1},function(arg,data) 
 if data.ID == "Ok" then
 DevAbs:set(BANDE..'Abs:PinnedMsg'..msg.chat_id_,msg.reply_to_message_id_)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تثبيت الرساله بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تثبيت الرساله بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 return false  
 end
 if data.code_ == 6 then
@@ -8764,7 +8764,7 @@ tdcli_function ({ID="GetUserProfilePhotos",user_id_=Manager_id,offset_=0,limit_=
 if getpro.photos_[0] then
 Text = "*✯︙Owner Name ↬ * ["..dp.first_name_.."](T.me/"..dp.username_..")\n*✯︙Owner User ↬* [@"..dp.username_.."]\n*✯︙Owner id ↬* ["..dp.id_.."](T.me/"..dp.username_..")"
 keyboard = {} 
-keyboard.inline_keyboard = {{{text=''..dp.first_name_..'',url="t.me/"..dp.username_ or WaTaNTeaM}}}
+keyboard.inline_keyboard = {{{text=''..dp.first_name_..'',url="t.me/"..dp.username_ or Dev-BANDE}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Text)..'&photo='..getpro.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 else
@@ -8977,7 +8977,7 @@ if dp.first_name_ == false then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "WaTaNTeaM")
+local UserName = (dp.username_ or "Dev-BANDE")
 Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙تم رفع مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
 DevAbs:sadd(BANDE.."Abs:AbsConstructor:"..msg.chat_id_,dp.id_)
 end,nil)   
@@ -9036,13 +9036,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text and (text == "تفعيل تحويل الصيغ" or text == "تفعيل التحويل") and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل تحويل الصيغ'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل تحويل الصيغ'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Thwel:Abs'..msg.chat_id_) 
 end
 if text and (text == "تعطيل تحويل الصيغ" or text == "تعطيل التحويل") and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل تحويل الصيغ'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل تحويل الصيغ'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Thwel:Abs'..msg.chat_id_,true)  
 end
 if text == 'تحويل' and not DevAbs:get(BANDE..'Abs:Thwel:Abs'..msg.chat_id_) then  
@@ -9421,8 +9421,8 @@ end
 if SecondSudo(msg) then
 if text and text:match("^تعيين الايدي العام$") or text and text:match("^تعين الايدي العام$") or text and text:match("^تعيين كليشة الايدي$") then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙رجائا اتبع التعليمات للتعيين \n✯︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
-DevAbs:set("BANDE:New:id:"..BANDE..msg.sender_user_id_,'WaTaNTeaM')
-return "WaTaNTeaM"
+DevAbs:set("BANDE:New:id:"..BANDE..msg.sender_user_id_,'Dev-BANDE')
+return "Dev-BANDE"
 end
 if text and DevAbs:get("BANDE:New:id:"..BANDE..msg.sender_user_id_) then 
 if text == 'الغاء' then   
@@ -9443,8 +9443,8 @@ end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text and text:match("^تعيين الايدي$") and ChCheck(msg) or text and text:match("^تعين الايدي$") and ChCheck(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙رجائا اتبع التعليمات للتعيين \n✯︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
-DevAbs:set("BANDE:New:id:"..BANDE..msg.chat_id_..msg.sender_user_id_,'WaTaNTeaM')
-return "WaTaNTeaM"
+DevAbs:set("BANDE:New:id:"..BANDE..msg.chat_id_..msg.sender_user_id_,'Dev-BANDE')
+return "Dev-BANDE"
 end
 if text and Manager(msg) and DevAbs:get("BANDE:New:id:"..BANDE..msg.chat_id_..msg.sender_user_id_) then 
 if text == 'الغاء' then   
@@ -9467,7 +9467,7 @@ if msg.reply_to_message_id_ ~= 0 then
 return ""
 else
 if text and (text:match("^ايدي$") or text:match("^id$") or text:match("^Id$")) and ChCheck(msg) then
-function WaTaNTeaM(extra,Abs,success)
+function Dev-BANDE(extra,Abs,success)
 if Abs.username_ then username = '@'..Abs.username_ else username = 'لا يوجد' end
 if GetCustomTitle(msg.sender_user_id_,msg.chat_id_) ~= false then CustomTitle = GetCustomTitle(msg.sender_user_id_,msg.chat_id_) else CustomTitle = 'لا يوجد' end
 local function getpro(extra, Abs, success) 
@@ -9591,7 +9591,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙عذرا الايدي معطل', 1, 'md
 end end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
 end
-getUser(msg.sender_user_id_, WaTaNTeaM)
+getUser(msg.sender_user_id_, Dev-BANDE)
 end
 end 
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -9718,16 +9718,16 @@ if text and text == 'تفعيل الايدي بالصوره' and ChCheck(msg) th
 if not DevAbs:get(BANDE..'Abs:Lock:Id:Photo'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙الايدي بالصوره بالتاكيد مفعل', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الايدي بالصوره'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الايدي بالصوره'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:Id:Photo'..msg.chat_id_)
 end end
 if text and text == 'تعطيل الايدي بالصوره' and ChCheck(msg) then
 if DevAbs:get(BANDE..'Abs:Lock:Id:Photo'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙الايدي بالصوره بالتاكيد معطل', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الايدي بالصوره'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الايدي بالصوره'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:Id:Photo'..msg.chat_id_,true)
 end end 
 
@@ -9735,16 +9735,16 @@ if text and text == 'تفعيل الايدي' and ChCheck(msg) then
 if not DevAbs:get(BANDE..'Abs:Lock:Id'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙الايدي بالتاكيد مفعل ', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الايدي بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الايدي بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:Id'..msg.chat_id_)
 end end 
 if text and text == 'تعطيل الايدي' and ChCheck(msg) then
 if DevAbs:get(BANDE..'Abs:Lock:Id'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙الايدي بالتاكيد معطل ', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الايدي بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الايدي بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:Id'..msg.chat_id_,true)
 end end
 end
@@ -9772,13 +9772,13 @@ end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if Admin(msg) then
 if text and text:match("^تفعيل الترحيب$") and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الترحيب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الترحيب بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:Lock:Welcome"..msg.chat_id_,true)
 end
 if text and text:match("^تعطيل الترحيب$") and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الترحيب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الترحيب بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:Lock:Welcome"..msg.chat_id_)
 end
 if DevAbs:get(BANDE..'Abs:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_) then 
@@ -9985,13 +9985,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text and (text == "تفعيل التلقائي" or text == "تفعيل المسح التلقائي" or text == "تفعيل الحذف التلقائي") and Constructor(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ميزة الحذف التلقائي للميديا'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ميزة الحذف التلقائي للميديا'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:CleanNum'..msg.chat_id_,true)  
 end
 if text and (text == "تعطيل التلقائي" or text == "تعطيل المسح التلقائي" or text == "تعطيل الحذف التلقائي") and Constructor(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الحذف التلقائي للميديا'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الحذف التلقائي للميديا'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:CleanNum'..msg.chat_id_) 
 end
 if text and (text:match("^تعين عدد المسح (%d+)$") or text:match("^تعيين عدد المسح (%d+)$") or text:match("^تعين عدد الحذف (%d+)$") or text:match("^تعيين عدد الحذف (%d+)$") or text:match("^عدد المسح (%d+)$")) and Constructor(msg) and ChCheck(msg) then
@@ -10029,13 +10029,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل امسح" and Constructor(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امسح بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل امسح بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:Clean'..msg.chat_id_,true)  
 end
 if text == "تعطيل امسح" and Constructor(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امسح بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل امسح بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:Clean'..msg.chat_id_) 
 end
 if Cleaner(msg) then
@@ -10065,13 +10065,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل مسح الاغاني" and Constructor(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل مسح الاغاني بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل مسح الاغاني بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:CleanMusic'..msg.chat_id_,true)  
 end
 if text == "تعطيل مسح الاغاني" and Constructor(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل مسح الاغاني بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل مسح الاغاني بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:CleanMusic'..msg.chat_id_) 
 end
 if CleanerMusic(msg) then
@@ -10996,13 +10996,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل كول" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل كول'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل كول'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Speak:after:me'..msg.chat_id_) 
 end
 if text == "تعطيل كول" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل كول'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل كول'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Speak:after:me'..msg.chat_id_,true)  
 end
 if text and text:match("^كول (.*)$") and ChCheck(msg) and not DevAbs:get(BANDE.."Speak:after:me"..msg.chat_id_) then
@@ -11011,13 +11011,13 @@ Dev_Abs(msg.chat_id_,0, 1, txt[2], 1, 'md')
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end
 if text == "تفعيل انطق" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ميزة انطق'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ميزة انطق'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Antk:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل انطق" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل ميزة انطق'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل ميزة انطق'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Antk:Abs'..msg.chat_id_,true)  
 end
 if text and text:match("^انطق (.*)$") and not DevAbs:get(BANDE..'Abs:Antk:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11063,13 +11063,13 @@ end,nil)
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل الزخرفه" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الزخرفه بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الزخرفه بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Zrf:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل الزخرفه" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الزخرفه بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الزخرفه بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Zrf:Abs'..msg.chat_id_,true)  
 end
 if DevAbs:get(BANDE..'Zrf:Abs'..msg.chat_id_..msg.sender_user_id_) then 
@@ -11112,13 +11112,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل الابراج" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الابراج بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الابراج بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Brg:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل الابراج" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الابراج بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الابراج بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Brg:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(BANDE..'Abs:Brg:Abs'..msg.chat_id_) then
@@ -11132,13 +11132,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجوله" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل اوامر النسب'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل اوامر النسب'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Nsba:Abs'..msg.chat_id_) 
 end
 if text and (text == "تعطيل اوامر النسب" or text == "تعطيل نسبه الحب" or text == "تعطيل نسبه الكره" or text == "تعطيل نسبه الرجوله" or text == "تعطيل نسبه الانوثه" or text == "تعطيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل اوامر النسب'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل اوامر النسب'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Nsba:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(BANDE..'Abs:Nsba:Abs'..msg.chat_id_) then
@@ -11262,13 +11262,13 @@ return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل حساب العمر'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل حساب العمر'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Age:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل حساب العمر'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل حساب العمر'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Age:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(BANDE..'Abs:Age:Abs'..msg.chat_id_) then
@@ -11282,13 +11282,13 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل معاني الاسماء" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل معاني الاسماء'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل معاني الاسماء'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Mean:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل معاني الاسماء" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل معاني الاسماء'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل معاني الاسماء'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Mean:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(BANDE..'Abs:Mean:Abs'..msg.chat_id_) then
@@ -11302,32 +11302,32 @@ end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل متحركه" and Manager(msg) and ChCheck(msg) or text == "تفعيل المتحركه" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل المتحركه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل المتحركه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:gif:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل متحركه" and Manager(msg) and ChCheck(msg) or text == "تعطيل المتحركه" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل المتحركه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل المتحركه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:gif:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "متحركه" or text == "↫ متحركه ✯") and not DevAbs:get(BANDE..'Abs:gif:Abs'..msg.chat_id_) and ChCheck(msg) then
 Abs = math.random(2,1075); 
 local Text ='*✯︙تم اختيار المتحركه لك*'
 keyboard = {}  
-keyboard.inline_keyboard = {{{text=". مره اخرى ✯",callback_data="/gif:"..msg.sender_user_id_}},{{text = '✯ BANDE Team .',url="t.me/WaTaNTeaM"}}} 
+keyboard.inline_keyboard = {{{text=". مره اخرى ✯",callback_data="/gif:"..msg.sender_user_id_}},{{text = '✯ BANDE Team .',url="t.me/Dev-BANDE"}}} 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/GifWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل ميمز" and Manager(msg) and ChCheck(msg) or text == "تفعيل الميمز" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الميمز'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الميمز'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:memz:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل ميمز" and Manager(msg) and ChCheck(msg) or text == "تعطيل الميمز" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الميمز'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الميمز'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:memz:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "ميمز" or text == "↫ ميمز ✯") and not DevAbs:get(BANDE..'Abs:memz:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11340,13 +11340,13 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' ..
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل غنيلي" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل غنيلي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل غنيلي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Audios:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل غنيلي" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل غنيلي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل غنيلي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Audios:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "غنيلي" or text == "↫ غنيلي ✯") and not DevAbs:get(BANDE..'Abs:Audios:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11359,13 +11359,13 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' ..
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل الاغاني" and Manager(msg) and ChCheck(msg) or text == "تفعيل اغنيه" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الاغاني'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الاغاني'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:mp3:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل الاغاني" and Manager(msg) and ChCheck(msg) or text == "تعطيل اغنيه" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الاغاني'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الاغاني'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:mp3:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "اغنيه" or text == "↫ اغنيه ✯" or text == "اغاني") and not DevAbs:get(BANDE..'Abs:mp3:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11378,13 +11378,13 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendAudio?chat_id=' ..
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل ريمكس" and Manager(msg) and ChCheck(msg) or text == "تفعيل الريمكس" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الريمكس'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الريمكس'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Remix:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل ريمكس" and Manager(msg) and ChCheck(msg) or text == "تعطيل الريمكس" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الريمكس'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الريمكس'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Remix:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "ريمكس" or text == "↫ ريمكس ✯") and not DevAbs:get(BANDE..'Abs:Remix:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11397,13 +11397,13 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' ..
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل صوره" and Manager(msg) and ChCheck(msg) or text == "تفعيل الصوره" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الصوره'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الصوره'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Photo:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل صوره" and Manager(msg) and ChCheck(msg) or text == "تعطيل الصوره" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الصوره'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الصوره'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Photo:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "صوره" or text == "↫ صوره ✯") and not DevAbs:get(BANDE..'Abs:Photo:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11416,13 +11416,13 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' ..
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل انمي" and Manager(msg) and ChCheck(msg) or text == "تفعيل الانمي" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الانمي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الانمي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Anime:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل انمي" and Manager(msg) and ChCheck(msg) or text == "تعطيل الانمي" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الانمي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الانمي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Anime:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "انمي" or text == "↫ انمي ✯") and not DevAbs:get(BANDE..'Abs:Anime:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11435,13 +11435,13 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' ..
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل فلم" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الافلام'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الافلام'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Movies:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل فلم" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الافلام'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الافلام'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Movies:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "فلم" or text == "↫ فلم ✯") and not DevAbs:get(BANDE..'Abs:Movies:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11454,13 +11454,13 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' ..
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == "تفعيل مسلسل" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل المسلسلات'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل المسلسلات'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Series:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل مسلسل" and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل المسلسلات'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل المسلسلات'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Series:Abs'..msg.chat_id_,true)  
 end
 if text and (text == "مسلسل" or text == "↫ مسلسل ✯") and not DevAbs:get(BANDE..'Abs:Series:Abs'..msg.chat_id_) and ChCheck(msg) then
@@ -11474,97 +11474,97 @@ end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if Admin(msg) then
 if DevAbs:get(BANDE..'Abs:LockSettings'..msg.chat_id_) then 
-if text == "الروابط" then if DevAbs:get(BANDE..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الروابط ↫ "..mute_links.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "المعرف" or text == "المعرفات" then if DevAbs:get(BANDE..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙المعرف ↫ "..lock_tag.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "المتحركه" or text == "الملصقات المتحركه" then if DevAbs:get(BANDE..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙المتحركه ↫ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الملصقات" then if DevAbs:get(BANDE..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الملصقات ↫ "..lock_sticker.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الصور" then if DevAbs:get(BANDE..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الصور ↫ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(BANDE..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الفيديو ↫ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الاونلاين" then if DevAbs:get(BANDE..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙الاونلاين ↫ "..mute_in.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الدردشه" then if DevAbs:get(BANDE..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الدردشه ↫ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "التوجيه" or text == "اعاده التوجيه" then if DevAbs:get(BANDE..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙التوجيه ↫ "..lock_forward.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الاغاني" then if DevAbs:get(BANDE..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الاغاني ↫ "..mute_music.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الصوت" or text == "الصوتيات" then if DevAbs:get(BANDE..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙الصوت ↫ "..mute_voice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الجهات" or text == "جهات الاتصال" then if DevAbs:get(BANDE..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الجهات ↫ "..lock_contact.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الماركداون" then if DevAbs:get(BANDE..'Abs:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفل' else markdown = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙الماركداون ↫ "..markdown.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الهاشتاك" then if DevAbs:get(BANDE..'Abs:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفل' else lock_htag = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙الهاشتاك ↫ "..lock_htag.."\n"Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "التعديل" then if DevAbs:get(BANDE..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙التعديل ↫ "..mute_edit.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "التثبيت" then if DevAbs:get(BANDE..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙التثبيت ↫ "..lock_pin.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الاشعارات" then if DevAbs:get(BANDE..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الاشعارات ↫ "..lock_tgservice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الكلايش" then if DevAbs:get(BANDE..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الكلايش ↫ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الدخول" then if DevAbs:get(BANDE..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local WaTaNTeaM = "\n" .."✯︙الدخول ↫ "..lock_Join.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الشبكات" then if DevAbs:get(BANDE..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الشبكات ↫ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "المواقع" then if DevAbs:get(BANDE..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙المواقع ↫ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "العربيه" then if DevAbs:get(BANDE..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙العربيه ↫ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الانكليزيه" then if DevAbs:get(BANDE..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local WaTaNTeaM = "\n" .."✯︙الانكليزيه ↫ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الكفر" then if DevAbs:get(BANDE..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local WaTaNTeaM = "\n" .."✯︙الكفر ↫ "..lock_kaf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الفشار" then if DevAbs:get(BANDE..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local WaTaNTeaM = "\n" .."✯︙الفشار ↫ "..lock_fshar.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
-if text == "الطائفيه" then if DevAbs:get(BANDE..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local WaTaNTeaM = "\n" .."✯︙الطائفيه ↫ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, WaTaNTeaM, 1, 'md') end
+if text == "الروابط" then if DevAbs:get(BANDE..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الروابط ↫ "..mute_links.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "المعرف" or text == "المعرفات" then if DevAbs:get(BANDE..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙المعرف ↫ "..lock_tag.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "المتحركه" or text == "الملصقات المتحركه" then if DevAbs:get(BANDE..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙المتحركه ↫ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الملصقات" then if DevAbs:get(BANDE..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الملصقات ↫ "..lock_sticker.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الصور" then if DevAbs:get(BANDE..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الصور ↫ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(BANDE..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الفيديو ↫ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الاونلاين" then if DevAbs:get(BANDE..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙الاونلاين ↫ "..mute_in.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الدردشه" then if DevAbs:get(BANDE..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الدردشه ↫ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "التوجيه" or text == "اعاده التوجيه" then if DevAbs:get(BANDE..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙التوجيه ↫ "..lock_forward.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الاغاني" then if DevAbs:get(BANDE..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الاغاني ↫ "..mute_music.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الصوت" or text == "الصوتيات" then if DevAbs:get(BANDE..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙الصوت ↫ "..mute_voice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الجهات" or text == "جهات الاتصال" then if DevAbs:get(BANDE..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الجهات ↫ "..lock_contact.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الماركداون" then if DevAbs:get(BANDE..'Abs:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفل' else markdown = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙الماركداون ↫ "..markdown.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الهاشتاك" then if DevAbs:get(BANDE..'Abs:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفل' else lock_htag = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙الهاشتاك ↫ "..lock_htag.."\n"Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "التعديل" then if DevAbs:get(BANDE..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙التعديل ↫ "..mute_edit.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "التثبيت" then if DevAbs:get(BANDE..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙التثبيت ↫ "..lock_pin.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الاشعارات" then if DevAbs:get(BANDE..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الاشعارات ↫ "..lock_tgservice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الكلايش" then if DevAbs:get(BANDE..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الكلايش ↫ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الدخول" then if DevAbs:get(BANDE..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local Dev-BANDE = "\n" .."✯︙الدخول ↫ "..lock_Join.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الشبكات" then if DevAbs:get(BANDE..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الشبكات ↫ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "المواقع" then if DevAbs:get(BANDE..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙المواقع ↫ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "العربيه" then if DevAbs:get(BANDE..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙العربيه ↫ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الانكليزيه" then if DevAbs:get(BANDE..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local Dev-BANDE = "\n" .."✯︙الانكليزيه ↫ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الكفر" then if DevAbs:get(BANDE..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local Dev-BANDE = "\n" .."✯︙الكفر ↫ "..lock_kaf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الفشار" then if DevAbs:get(BANDE..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local Dev-BANDE = "\n" .."✯︙الفشار ↫ "..lock_fshar.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
+if text == "الطائفيه" then if DevAbs:get(BANDE..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local Dev-BANDE = "\n" .."✯︙الطائفيه ↫ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, Dev-BANDE, 1, 'md') end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تفعيل كشف الاعدادات' and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل كشف الاعدادات'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل كشف الاعدادات'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:LockSettings'..msg.chat_id_,true)  
 end
 if text == 'تعطيل كشف الاعدادات' and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل كشف الاعدادات'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل كشف الاعدادات'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:LockSettings'..msg.chat_id_) 
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text and (text == 'تعطيل التحقق' or text == 'قفل التحقق' or text == 'تعطيل تنبيه الدخول') and Manager(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل التحقق بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل التحقق بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:Robot'..msg.chat_id_)
 end
 if text and (text == 'تفعيل التحقق' or text == 'فتح التحقق' or text == 'تفعيل تنبيه الدخول') and Manager(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل التحقق بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل التحقق بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:Robot'..msg.chat_id_,true)
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تفعيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ردود المدير'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ردود المدير'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:GpRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل ردود المدير'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل ردود المدير'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:GpRed'..msg.chat_id_,true)
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تفعيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ردود المطور'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل ردود المطور'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:AllRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل ردود المطور'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل ردود المطور'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:AllRed'..msg.chat_id_,true)
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if AbsSudo(msg) then
 if text == 'تفعيل المغادره' or text == '↫ تفعيل المغادره ✯' and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل المغادره بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل المغادره بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:Left:Bot"..BANDE)
 end
 if text == 'تعطيل المغادره' or text == '↫ تعطيل المغادره ✯' and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل المغادره بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل المغادره بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:Left:Bot"..BANDE,true) 
 end 
 if text == 'تفعيل الاذاعه' or text == '↫ تفعيل الاذاعه ✯' and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الاذاعه بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الاذاعه بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:Send:Bot"..BANDE)
 end
 if text == 'تعطيل الاذاعه' or text == '↫ تعطيل الاذاعه ✯' and ChCheck(msg) then 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الاذاعه بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الاذاعه بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:Send:Bot"..BANDE,true) 
 end
 end
@@ -11579,8 +11579,8 @@ end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
 send(msg.chat_id_,msg.id_,"✯︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات")  
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تغير اسم المجموعه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تغير اسم المجموعه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
 end
@@ -11601,8 +11601,8 @@ if data.message_ == "CHAT_ADMIN_REQUIRED" then
 send(msg.chat_id_, msg.id_,"✯︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات") 
 DevAbs:del(BANDE..'Abs:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تغير صورة المجموعه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تغير صورة المجموعه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
 DevAbs:del(BANDE..'Abs:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
@@ -11628,8 +11628,8 @@ end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
 DevAbs:del(BANDE..'Abs:PinnedMsg'..msg.chat_id_)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم الغاء تثبيت الرساله'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم الغاء تثبيت الرساله'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 return false  
 end
 if data.code_ == 6 then
@@ -11650,8 +11650,8 @@ return false
 end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم الغاء تثبيت الكل'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم الغاء تثبيت الكل'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 https.request('https://api.telegram.org/bot'..TokenBot..'/unpinAllChatMessages?chat_id='..msg.chat_id_)
 DevAbs:del(BANDE.."Abs:PinnedMsg"..msg.chat_id_)
 return false  
@@ -11675,8 +11675,8 @@ end
 local PinId = DevAbs:get(BANDE..'Abs:PinnedMsg'..msg.chat_id_)
 if PinId then
 Pin(msg.chat_id_,PinId,0)
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم اعادة تثبيت الرساله'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم اعادة تثبيت الرساله'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end end
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
@@ -11734,7 +11734,7 @@ local TkeedList = DevAbs:scard(BANDE.."Abs:Abs:Tkeed:"..ChatId) or 0
 local AdminsList = DevAbs:scard(BANDE.."Abs:Admins:"..ChatId) or 0
 local VipList = DevAbs:scard(BANDE.."Abs:VipMem:"..ChatId) or 0
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..ChatId))
-if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/WaTaNTeaM' end
+if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/Dev-BANDE' end
 tdcli_function({ID ="GetChat",chat_id_=ChatId},function(arg,dp)
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = ChatId:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 if dp.id_ then
@@ -11770,8 +11770,8 @@ if text == 'تفعيل البوت الخدمي' and ChCheck(msg) or text == '↫
 if not AbsSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙للمطور الاساسي فقط', 1, 'md')
 else 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل البوت الخدمي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل البوت الخدمي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:FreeBot'..BANDE) 
 end 
 end
@@ -11779,80 +11779,80 @@ if text == 'تعطيل البوت الخدمي' and ChCheck(msg) or text == '↫
 if not AbsSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙للمطور الاساسي فقط', 1, 'md')
 else 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل البوت الخدمي'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل البوت الخدمي'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:FreeBot'..BANDE,true) 
 end 
 end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'تعطيل بايو' and Manager(msg) and ChCheck(msg) or text == 'تعطيل البايو' and Manager(msg) and ChCheck(msg) then   
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل بايو بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل بايو بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Bio:Profile'..msg.chat_id_) 
 end
 if text == 'تفعيل بايو' and Manager(msg) and ChCheck(msg) or text == 'تفعيل البايو' and Manager(msg) and ChCheck(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل بايو بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل بايو بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Bio:Profile'..msg.chat_id_,true)  
 end
 if text == 'تعطيل صورتي' and Manager(msg) and ChCheck(msg) then   
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل صورتي بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل صورتي بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Photo:Profile'..msg.chat_id_) 
 end
 if text == 'تفعيل صورتي' and Manager(msg) and ChCheck(msg) then  
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل صورتي بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل صورتي بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Photo:Profile'..msg.chat_id_,true)  
 end
 if text == 'تفعيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تفعيل اللعبه' and Manager(msg) and ChCheck(msg) then   
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الالعاب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الالعاب بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:Games'..msg.chat_id_) 
 end
 if text == 'تعطيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تعطيل اللعبه' and Manager(msg) and ChCheck(msg) then  
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الالعاب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الالعاب بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:Games'..msg.chat_id_,true)  
 end
 if text == 'تفعيل الالعاب المتطوره' and Manager(msg) and ChCheck(msg) or text == 'تفعيل الالعاب الاحترافيه' and Manager(msg) and ChCheck(msg) then   
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الالعاب المتطوره بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل الالعاب المتطوره بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE..'Abs:Lock:Gamesinline'..msg.chat_id_) 
 end
 if text == 'تعطيل الالعاب المتطوره' and Manager(msg) and ChCheck(msg) or text == 'تعطيل الالعاب الاحترافيه' and Manager(msg) and ChCheck(msg) then  
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الالعاب المتطوره بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل الالعاب المتطوره بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE..'Abs:Lock:Gamesinline'..msg.chat_id_,true)  
 end
 if text == "تفعيل الرابط" and ChCheck(msg) or text == "تفعيل جلب الرابط" and ChCheck(msg) then 
 if Admin(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل جلب رابط المجموعه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل جلب رابط المجموعه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:Lock:GpLinks"..msg.chat_id_)
 return false  
 end
 end
 if text == "تعطيل الرابط" and ChCheck(msg) or text == "تعطيل جلب الرابط" and ChCheck(msg) then 
 if Admin(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل جلب رابط المجموعه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل جلب رابط المجموعه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:Lock:GpLinks"..msg.chat_id_,"ok")
 return false  
 end
 end
 if text == "تعطيل الرابط انلاين" and ChCheck(msg) or text == "تعطيل جلب الرابط انلاين" and ChCheck(msg) then 
 if Admin(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل جلب رابط انلاين المجموعه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل جلب رابط انلاين المجموعه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:Lock:GpLinksinline"..msg.chat_id_,"ok")
 return false  
 end
 end
 if text == "تفعيل الرابط انلاين" and ChCheck(msg) or text == "تفعيل جلب الرابط انلاين" and ChCheck(msg) then 
 if Admin(msg) then
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل جلب رابط انلاين المجموعه'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل جلب رابط انلاين المجموعه'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:Lock:GpLinksinline"..msg.chat_id_)
 return false  
 end
@@ -11861,8 +11861,8 @@ if text and (text == "تفعيل حذف الردود" or text == "تفعيل م�
 if not AbsConstructor(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل حذف ردود المدير'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل حذف ردود المدير'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:Lock:GpRd"..msg.chat_id_)
 return false  
 end
@@ -11871,8 +11871,8 @@ if text and (text == "تعطيل حذف الردود" or text == "تعطيل م�
 if not AbsConstructor(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل حذف ردود المدير'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل حذف ردود المدير'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:Lock:GpRd"..msg.chat_id_,true)
 return false  
 end
@@ -11881,8 +11881,8 @@ if text and (text == "تفعيل اضف رد" or text == "تفعيل اضافه 
 if not AbsConstructor(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل اضف رد'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل اضف رد'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:Lock:Rd"..msg.chat_id_)
 return false  
 end
@@ -11891,8 +11891,8 @@ if text and (text == "تعطيل اضف رد" or text == "تعطيل اضافه 
 if not AbsConstructor(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙لمالك المجموعه او اعلى فقط ', 1, 'md')
 else
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل اضف رد'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل اضف رد'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:Lock:Rd"..msg.chat_id_,true)
 return false  
 end
@@ -11943,7 +11943,7 @@ if DevAbs:sismember(BANDE..'Abs:Groups',msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙المجموعه بالتاكيد مفعله', 1, 'md')
 else
 Text = "✯︙تم تفعيل المجموعه "..dp.title_
-local inline = {{{text="‹ ترتيب الاوامر ›",callback_data="/SetCmdGp:"..msg.sender_user_id_},{text="‹ رفع الادمنيه ›",callback_data="/UploadAdmin:"..msg.sender_user_id_}},{{text="‹ غادر ›",callback_data="/LeaveBot:"..msg.sender_user_id_},{text="‹ تعطيل ›",callback_data="/Stop:"..msg.sender_user_id_}},{{text="‹ WaTaN TeaM ›",url="t.me/WaTaNTeaM"}}}
+local inline = {{{text="‹ ترتيب الاوامر ›",callback_data="/SetCmdGp:"..msg.sender_user_id_},{text="‹ رفع الادمنيه ›",callback_data="/UploadAdmin:"..msg.sender_user_id_}},{{text="‹ غادر ›",callback_data="/LeaveBot:"..msg.sender_user_id_},{text="‹ تعطيل ›",callback_data="/Stop:"..msg.sender_user_id_}},{{text="‹ WaTaN TeaM ›",url="t.me/Dev-BANDE"}}}
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 DevAbs:sadd(BANDE.."Abs:Groups",msg.chat_id_)
 if not DevAbs:get(BANDE..'Abs:SudosGp'..msg.sender_user_id_..msg.chat_id_) and not SecondSudo(msg) then 
@@ -12085,8 +12085,8 @@ send(msg.chat_id_, msg.id_,"✯︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(BANDE.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(BANDE.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -12152,8 +12152,8 @@ send(msg.chat_id_, msg.id_,"✯︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(BANDE.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(BANDE.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -12219,8 +12219,8 @@ send(msg.chat_id_, msg.id_,"✯︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(BANDE.."Abs:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل الرساله الان لتوجيها \n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل الرساله الان لتوجيها \n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(BANDE.."Abs:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -12243,8 +12243,8 @@ send(msg.chat_id_, msg.id_,"✯︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(BANDE.."Abs:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل الرساله الان لتوجيها \n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل الرساله الان لتوجيها \n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(BANDE.."Abs:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -12267,8 +12267,8 @@ send(msg.chat_id_, msg.id_,"✯︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(BANDE.."Abs:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✯︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(BANDE.."Abs:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -12706,8 +12706,8 @@ if not SecondSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevAbs:del(BANDE..'Abs:NameBot')
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم حذف اسم البوت'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم حذف اسم البوت'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 end end 
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text and text:match("^استعاده الاوامر$") and SecondSudo(msg) and ChCheck(msg) or text and text:match("^استعادة كلايش الاوامر$") and SecondSudo(msg) and ChCheck(msg) then
@@ -12722,8 +12722,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل كليشة (الاوامر) ا
 DevAbs:set(BANDE..'Abs:Help0'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local WaTaNTeaM =  DevAbs:get(BANDE..'Abs:Help0'..msg.sender_user_id_)
-if WaTaNTeaM == 'msg' then
+local Dev-BANDE =  DevAbs:get(BANDE..'Abs:Help0'..msg.sender_user_id_)
+if Dev-BANDE == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(BANDE..'Abs:Help0'..msg.sender_user_id_)
 DevAbs:set(BANDE..'Abs:Help', text)
@@ -12742,7 +12742,7 @@ local Text = [[
 ✯︙م5 ↫ اوامر المطورين
 ✯︙م6 ↫ اوامر الاعضاء
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-✯︙[Source Channel](https://t.me/WaTaNTeaM)
+✯︙[Source Channel](https://t.me/Dev-BANDE)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="اوامر الرتب",callback_data="/DelList:"..msg.sender_user_id_}},{{text="التفعيل و التعطيل",callback_data="/lockorder:"..msg.sender_user_id_},{text="القفل و الفتح",callback_data="/locklist:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
@@ -12754,8 +12754,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل كليشة (م1) الان " , 
 DevAbs:set(BANDE..'Abs:Help01'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local WaTaNTeaM =  DevAbs:get(BANDE..'Abs:Help01'..msg.sender_user_id_)
-if WaTaNTeaM == 'msg' then 
+local Dev-BANDE =  DevAbs:get(BANDE..'Abs:Help01'..msg.sender_user_id_)
+if Dev-BANDE == 'msg' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(BANDE..'Abs:Help01'..msg.sender_user_id_)
 DevAbs:set(BANDE..'Abs:Help1', text)
@@ -12822,8 +12822,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل كليشة (م2) الان " , 
 DevAbs:set(BANDE..'Abs:Help21'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local WaTaNTeaM =  DevAbs:get(BANDE..'Abs:Help21'..msg.sender_user_id_)
-if WaTaNTeaM == 'msg' then
+local Dev-BANDE =  DevAbs:get(BANDE..'Abs:Help21'..msg.sender_user_id_)
+if Dev-BANDE == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(BANDE..'Abs:Help21'..msg.sender_user_id_)
 DevAbs:set(BANDE..'Abs:Help2', text)
@@ -12897,8 +12897,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل كليشة (م3) الان " , 
 DevAbs:set(BANDE..'Abs:Help31'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local WaTaNTeaM =  DevAbs:get(BANDE..'Abs:Help31'..msg.sender_user_id_)
-if WaTaNTeaM == 'msg' then
+local Dev-BANDE =  DevAbs:get(BANDE..'Abs:Help31'..msg.sender_user_id_)
+if Dev-BANDE == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(BANDE..'Abs:Help31'..msg.sender_user_id_)
 DevAbs:set(BANDE..'Abs:Help3', text)
@@ -12962,8 +12962,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل كليشة (م4) الان " , 
 DevAbs:set(BANDE..'Abs:Help41'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local WaTaNTeaM =  DevAbs:get(BANDE..'Abs:Help41'..msg.sender_user_id_)
-if WaTaNTeaM == 'msg' then
+local Dev-BANDE =  DevAbs:get(BANDE..'Abs:Help41'..msg.sender_user_id_)
+if Dev-BANDE == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(BANDE..'Abs:Help41'..msg.sender_user_id_)
 DevAbs:set(BANDE..'Abs:Help4', text)
@@ -13021,8 +13021,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل كليشة (م5) الان " , 
 DevAbs:set(BANDE..'Abs:Help51'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local WaTaNTeaM =  DevAbs:get(BANDE..'Abs:Help51'..msg.sender_user_id_)
-if WaTaNTeaM == 'msg' then
+local Dev-BANDE =  DevAbs:get(BANDE..'Abs:Help51'..msg.sender_user_id_)
+if Dev-BANDE == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(BANDE..'Abs:Help51'..msg.sender_user_id_)
 DevAbs:set(BANDE..'Abs:Help5', text)
@@ -13105,8 +13105,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "✯︙ارسل كليشة (م6) الان " , 
 DevAbs:set(BANDE..'Abs:Help61'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local WaTaNTeaM =  DevAbs:get(BANDE..'Abs:Help61'..msg.sender_user_id_)
-if WaTaNTeaM == 'msg' then
+local Dev-BANDE =  DevAbs:get(BANDE..'Abs:Help61'..msg.sender_user_id_)
+if Dev-BANDE == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(BANDE..'Abs:Help61'..msg.sender_user_id_)
 DevAbs:set(BANDE..'Abs:Help6', text)
@@ -13245,14 +13245,14 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?cha
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تفعيل اليوتيوب' and Manager(msg) then  
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل اليوتيوب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تفعيل اليوتيوب بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:del(BANDE.."Abs:WhyTube"..msg.chat_id_) 
 return false  
 end
 if text == 'تعطيل اليوتيوب' and Manager(msg) then  
-local WaTaNTeaM = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل اليوتيوب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, WaTaNTeaM, 14, string.len(msg.sender_user_id_))
+local Dev-BANDE = '✯︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n✯︙تم تعطيل اليوتيوب بنجاح'
+Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, Dev-BANDE, 14, string.len(msg.sender_user_id_))
 DevAbs:set(BANDE.."Abs:WhyTube"..msg.chat_id_,true) 
 return false  
 end 
@@ -13266,16 +13266,16 @@ if SecondSudo(msg) then
 if text == 'تحديث المتجر' then 
 io.popen("mkdir Files")
 os.execute("rm -fr Files/*")
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/AddedMe.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/AutoFile.lua")  
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/ChangeName.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/ChangePhoto.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/ChangeUser.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/MuteNames.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/ProNames.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/ReplyBot.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/TagAdmins.lua") 
-io.popen("cd Files && wget https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/TagAll.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/AddedMe.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/AutoFile.lua")  
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ChangeName.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ChangePhoto.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ChangeUser.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/MuteNames.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ProNames.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/ReplyBot.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/TagAdmins.lua") 
+io.popen("cd Files && wget https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/TagAll.lua") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '♪︙تم تحديث المتجر الى الاصدار الجديد', 1, 'md') 
 dofile('BANDE.lua') 
 end
@@ -13355,7 +13355,7 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" and SecondSudo(msg) and ChCheck(msg) or text == 'المتجر' and ChCheck(msg) and SecondSudo(msg) or text == '↫  المتجر ✯' and ChCheck(msg) and SecondSudo(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -13387,7 +13387,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") and ChCheck(msg) and SecondSudo(msg) then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n✯︙الملف ↫ *"..FileName.."*\n✯︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -13399,7 +13399,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") and ChCheck(msg) and SecondSudo(msg) then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/WaTaNTeaM/BANDEFiles/main/BANDEFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/Dev-BANDE/BANDEFiles/main/BANDEFiles/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
@@ -13532,7 +13532,7 @@ keyboard.inline_keyboard = {
 {{text = '✯ قناة السورس',url="t.me/WaTaNTeaM"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/WaTaNTeaM&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Dev-BANDE&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
