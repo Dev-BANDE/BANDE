@@ -26,7 +26,7 @@ if not DevAbs:get(Server.."IdBANDE") then
 io.write('\27[1;35m\nالان ارسل ايدي المطور الاساسي ↫ ⤈\n\27[0;33;49m') 
 local DevId = io.read():gsub(' ','') 
 if tostring(DevId):match('%d+') then 
-data,res = https.request("https://api-BANDE.ml/BANDE/index.php?Ban=BANDE&Info&Id="..DevId)
+data,res = https.request("https://api-watan.ml/BANDE/index.php?Ban=BANDE&Info&Id="..DevId)
 if res == 200 then
 Abs = json:decode(data)
 if Abs.Result.Info == 'Is_Spam' then
